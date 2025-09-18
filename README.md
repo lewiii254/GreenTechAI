@@ -75,6 +75,22 @@ GreenAI is an AI-powered waste-to-energy optimization platform that helps commun
 - New waste point reporting system
 - Community statistics and engagement metrics
 
+### 🔔 **Smart Notifications & Alerts**
+- Real-time notifications for waste collection schedules
+- Energy generation milestone alerts
+- Community updates and announcements
+- Achievement and badge notifications
+- Customizable notification preferences
+- Web push notifications support
+
+### 🏆 **Gamification & Rewards System**
+- User profiles with levels and XP progression
+- Achievement badges with different rarities
+- Leaderboards with weekly/monthly rankings
+- Point-based reward system
+- Progress tracking for environmental impact
+- Community challenges and competitions
+
 ---
 
 ## 🏗️ Architecture

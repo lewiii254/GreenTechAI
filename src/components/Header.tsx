@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Recycle, Menu, X } from 'lucide-react';
+import NotificationSystem from './NotificationSystem';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,6 +47,11 @@ const Header: React.FC = () => {
               </motion.a>
             ))}
           </nav>
+
+          {/* Notifications */}
+          <div className="hidden md:block">
+            <NotificationSystem />
+          </div>
 
           {/* Mobile menu button */}
           <button

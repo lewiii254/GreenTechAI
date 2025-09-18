@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp, MessageCircle, Send, Users, Heart } from 'lucide-react';
+import GamificationSystem from './GamificationSystem';
 
 interface FAQ {
   id: string;
@@ -102,6 +103,17 @@ const CommunitySection: React.FC = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
+          {/* Gamification System */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="lg:col-span-2 mb-12"
+          >
+            <h3 className="text-2xl font-semibold text-gray-800 mb-8 text-center">Your Impact & Achievements</h3>
+            <GamificationSystem />
+          </motion.div>
+
           {/* FAQs Section */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
