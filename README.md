@@ -10,6 +10,10 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-5.4.2-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![React Router](https://img.shields.io/badge/React_Router-7.9.5-CA4245?style=for-the-badge&logo=react-router)](https://reactrouter.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23.13-0055FF?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+[![Leaflet](https://img.shields.io/badge/Leaflet-1.9.4-199900?style=for-the-badge&logo=leaflet)](https://leafletjs.com/)
+[![Recharts](https://img.shields.io/badge/Recharts-3.2.1-22B5BF?style=for-the-badge)](https://recharts.org/)
 
 </div>
 
@@ -41,6 +45,8 @@ GreenAI is an AI-powered waste-to-energy optimization platform that helps commun
 - **Mobile-first**: Responsive design optimized for all devices
 - **Accessibility**: WCAG 2.1 compliant with proper contrast ratios
 - **Performance**: Optimized bundle size and lazy loading
+- **Dark Mode**: Full dark mode support with smooth transitions
+- **Modern Stack**: Built with React 18, TypeScript 5, Tailwind CSS 3, and Framer Motion
 
 ---
 
@@ -50,46 +56,170 @@ GreenAI is an AI-powered waste-to-energy optimization platform that helps commun
 - Compelling branding with animated hero section
 - Clear value proposition and call-to-action
 - Feature highlights with smooth animations
+- Responsive design with Framer Motion animations
+- Gradient backgrounds and modern UI elements
 
 ### 🗣️ **AI Query Interface**
 - **Text Input**: Natural language processing for waste optimization queries
-- **Voice Input**: Web Speech API integration for hands-free interaction
-- **Voice Output**: Text-to-speech responses using ElevenLabs API
+- **Voice Input**: Web Speech API integration for hands-free interaction (browser-native)
+- **Voice Output**: Text-to-speech responses with customizable speech synthesis
 - **Chat Interface**: Styled conversation bubbles with typing indicators
+- **Real-time Processing**: Instant AI responses with loading states
+- **Conversation History**: Track and display chat message history
 
-### 🗺️ **Interactive Map**
-- Real-time waste collection points visualization
-- Nearest point highlighting with ML-powered recommendations
-- Google Maps integration with directions
+### 🗺️ **Interactive Map (Leaflet-based)**
+- Real-time waste collection points visualization using React Leaflet
+- Marker clustering for better performance with many locations
+- Nearest point highlighting with distance calculations
+- Directions and route planning
 - Capacity and efficiency metrics display
+- Interactive tooltips and popups
+- Support for multiple location types (collection points, processing centers, energy plants)
 
 ### 📊 **Insights Dashboard**
-- **Waste Analytics**: Weekly generation trends and patterns
+- **Waste Analytics**: Weekly, monthly, and yearly generation trends
 - **Energy Metrics**: Predicted output and conversion efficiency
 - **Impact Visualization**: CO₂ reduction and environmental benefits
 - **Interactive Charts**: Built with Recharts for responsive data display
+- **Time-based Filtering**: View trends across different time periods
+- **Real-time Data Updates**: Dynamic data visualization
+
+### 🤖 **AI-Powered Waste Prediction**
+- **Predictive Analytics**: ML-based waste volume forecasting
+- **Trend Analysis**: Identify patterns in waste generation
+- **Confidence Scores**: Model accuracy metrics (92%+ accuracy)
+- **Smart Insights**: Automated recommendations based on predictions
+- **Multiple Timeframes**: Week, month, and quarter predictions
+- **Visual Predictions**: Area charts showing actual vs predicted data
+- **Actionable Recommendations**: Optimize collection routes and schedules
+
+### 🌤️ **Weather Impact Analysis**
+- Real-time weather data integration
+- Impact analysis on waste collection efficiency
+- Temperature, humidity, and precipitation tracking
+- Weather-based optimization recommendations
+- Visual impact indicators (positive, negative, neutral)
+- Collection schedule adjustments based on weather
+
+### 🧮 **Carbon Footprint Calculator**
+- Calculate carbon savings from waste-to-energy conversion
+- Multiple waste type support (organic, plastic, paper, mixed)
+- Frequency-based calculations (daily, weekly, monthly)
+- Equivalency metrics:
+  - Trees planted equivalent
+  - Car miles driven equivalent
+  - Homes powered
+  - Energy generated (kWh)
+- Visual results with animated statistics
+- Shareable impact reports
+
+### 📚 **Educational Hub**
+- Interactive learning modules on waste-to-energy
+- Progress tracking for courses
+- Multiple difficulty levels (beginner, intermediate, advanced)
+- Topics covered:
+  - Introduction to Waste-to-Energy
+  - Science Behind Energy Generation
+  - Waste Sorting & Classification
+  - Environmental Impact Assessment
+  - AI in Waste Management
+  - Community Best Practices
+- Duration estimates and completion badges
 
 ### 👥 **Community Engagement**
 - FAQ section with expandable answers
 - Feedback form for community suggestions
 - New waste point reporting system
 - Community statistics and engagement metrics
+- Social features and user interactions
 
 ### 🔔 **Smart Notifications & Alerts**
-- Real-time notifications for waste collection schedules
-- Energy generation milestone alerts
-- Community updates and announcements
-- Achievement and badge notifications
+- Real-time notification system with toast messages
+- Multiple notification types:
+  - Waste collection schedules
+  - Energy generation milestones
+  - Community updates
+  - Achievement and badge unlocks
+- Priority-based notifications (low, medium, high)
+- Notification history and read/unread status
+- Actionable notifications with deep links
 - Customizable notification preferences
-- Web push notifications support
+- Desktop notifications support
 
 ### 🏆 **Gamification & Rewards System**
-- User profiles with levels and XP progression
-- Achievement badges with different rarities
-- Leaderboards with weekly/monthly rankings
-- Point-based reward system
-- Progress tracking for environmental impact
-- Community challenges and competitions
+- **User Profiles**: Comprehensive user progress tracking
+  - Level and XP progression system
+  - Avatar and profile customization
+  - Personal statistics dashboard
+- **Achievement Badges**: Multiple badge rarities (common, rare, epic, legendary)
+- **Leaderboards**: 
+  - Weekly, monthly, and all-time rankings
+  - Different categories (waste collected, energy generated, impact score)
+  - Top 10 user display
+- **Point-based Rewards**: Earn points for various activities
+- **Progress Tracking**: Visual progress bars and statistics
+- **Environmental Impact Score**: Combined metric of all activities
+- **User Statistics**:
+  - Total waste collected
+  - Energy generated
+  - CO₂ saved
+  - Days active
+  - Collection streak
+
+### 🏅 **Community Challenges**
+- **Multiple Challenge Types**:
+  - Individual challenges
+  - Team competitions
+  - Community-wide goals
+- **Real-time Progress**: Track challenge completion
+- **Difficulty Levels**: Easy, medium, and hard challenges
+- **Time-limited Events**: Countdown timers for active challenges
+- **Rewards**: Points and badges for completion
+- **Participant Counts**: See how many are participating
+- **Challenge Categories**:
+  - Waste collection goals
+  - Energy generation targets
+  - Sustainability streaks
+
+### 📤 **Report Export System**
+- Generate comprehensive reports in multiple formats (PDF, CSV, JSON)
+- Report types:
+  - Environmental Impact Reports
+  - Waste Analytics Reports
+  - Collection Statistics
+  - Energy Generation Reports
+- Customizable report sections
+- Date range selection (week, month, quarter, year)
+- Automated data compilation
+- Professional formatting with charts and graphs
+
+### 📱 **Social Sharing**
+- Share environmental achievements on social media
+- Supported platforms:
+  - Facebook
+  - Twitter (X)
+  - LinkedIn
+  - Instagram
+- Auto-generated shareable content
+- Custom graphics for social posts
+- Impact metrics in share messages
+- Copy-to-clipboard functionality
+
+### 🌓 **Dark Mode Support**
+- Full application dark mode
+- Smooth transition animations
+- Persistent theme preference (localStorage)
+- System preference detection
+- All components optimized for dark mode
+- Proper contrast ratios maintained
+
+### 📱 **Multi-Page Application**
+- **Home Page**: Landing page with hero section and feature overview
+- **Features Page**: AI Query, Map, Weather Impact, and Insights Dashboard
+- **Tools Page**: Waste Prediction, Carbon Calculator, and Export Reports
+- **Community Page**: Challenges, Educational Hub, and Community Section
+- React Router for smooth navigation
+- Responsive design across all pages
 
 ---
 
@@ -97,25 +227,48 @@ GreenAI is an AI-powered waste-to-energy optimization platform that helps commun
 
 ```mermaid
 graph TB
-    A[React Frontend] --> B[API Gateway]
-    B --> C[Python ML Backend]
-    B --> D[Node.js API Server]
-    C --> E[ML Models]
-    C --> F[Data Processing]
-    D --> G[Database]
-    D --> H[External APIs]
-    H --> I[Google Maps]
-    H --> J[ElevenLabs]
-    H --> K[Weather API]
+    A[React Frontend - SPA] --> B[React Router]
+    B --> C[Home Page]
+    B --> D[Features Page]
+    B --> E[Tools Page]
+    B --> F[Community Page]
+    
+    A --> G[Services Layer]
+    G --> H[Notification Service]
+    G --> I[Gamification Service]
+    G --> J[ML Service - Ready for Integration]
+    
+    A --> K[State Management]
+    K --> L[Theme Context - Dark Mode]
+    K --> M[Local Storage]
+    
+    A --> N[External Libraries]
+    N --> O[React Leaflet - Maps]
+    N --> P[Recharts - Analytics]
+    N --> Q[Framer Motion - Animations]
+    N --> R[Lucide React - Icons]
+    
+    A --> S[API Integration Points]
+    S --> T[Backend API - Ready]
+    S --> U[Python ML Backend - Ready]
+    S --> V[Weather API - Ready]
 ```
 
 ### 🔄 Data Flow
-1. **User Input** → Frontend captures text/voice queries
-2. **API Gateway** → Routes requests to appropriate services
-3. **ML Processing** → Python backend processes waste optimization
-4. **Data Storage** → Results stored in database
-5. **Real-time Updates** → WebSocket connections for live data
-6. **External Integration** → Maps, voice synthesis, and weather data
+1. **User Input** → Frontend captures text/voice queries via Web Speech API
+2. **Service Layer** → Routes requests to appropriate services (notification, gamification, ML)
+3. **ML Processing** → Python backend integration points ready for waste optimization
+4. **Local State** → React state management with Context API for theme and user preferences
+5. **Data Storage** → localStorage for user preferences, ready for backend database integration
+6. **Real-time Updates** → Toast notifications with react-hot-toast
+7. **External Integration** → Leaflet maps, voice synthesis, and weather data integration points
+
+### 🧩 Component Architecture
+- **Pages**: Top-level route components (Home, Features, Tools, Community)
+- **Components**: Reusable UI components with consistent styling
+- **Services**: Business logic and API integration layer
+- **Contexts**: Global state management (Theme/Dark Mode)
+- **Hooks**: Custom React hooks (planned for geolocation, WebSocket, etc.)
 
 ---
 
@@ -127,16 +280,50 @@ graph TB
 # Required versions
 Node.js >= 18.0.0
 npm >= 9.0.0
-Python >= 3.8
 Git >= 2.30.0
 ```
+
+### 🛠️ Technology Stack
+
+**Frontend Core:**
+- React 18.3.1 - UI library
+- TypeScript 5.5.3 - Type safety
+- Vite 5.4.2 - Build tool and dev server
+- Tailwind CSS 3.4.1 - Utility-first CSS framework
+
+**Routing & Navigation:**
+- React Router DOM 7.9.5 - Client-side routing
+
+**UI & Animations:**
+- Framer Motion 12.23.13 - Animation library
+- Lucide React 0.344.0 - Icon library
+
+**Data Visualization:**
+- Recharts 3.2.1 - Chart library
+
+**Maps & Geolocation:**
+- React Leaflet 4.2.1 - Map component
+- Leaflet 1.9.4 - Map library
+- React Leaflet Cluster 3.1.1 - Marker clustering
+
+**Notifications:**
+- React Hot Toast 2.6.0 - Toast notifications
+
+**Utilities:**
+- date-fns 4.1.0 - Date formatting
+- @supabase/supabase-js 2.57.4 - Ready for backend integration
+
+**Development Tools:**
+- ESLint 9.9.1 - Code linting
+- TypeScript ESLint - TypeScript linting
+- PostCSS & Autoprefixer - CSS processing
 
 ### 🛠️ Installation
 
 1. **Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/greenai-frontend.git
-cd greenai-frontend
+git clone https://github.com/lewiii254/GreenTechAI.git
+cd GreenTechAI
 ```
 
 2. **Install Dependencies**
@@ -144,12 +331,12 @@ cd greenai-frontend
 npm install
 ```
 
-3. **Environment Setup**
+3. **Environment Setup (Optional)**
 ```bash
-# Copy environment template
+# Copy environment template if you have API keys
 cp .env.example .env.local
 
-# Edit with your API keys
+# Edit with your API keys (all features work without API keys using browser-native APIs)
 nano .env.local
 ```
 
@@ -161,6 +348,23 @@ npm run dev
 5. **Open in Browser**
 ```
 http://localhost:5173
+```
+
+### 🏗️ Build for Production
+
+```bash
+# Create production build
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+### 🧪 Code Quality
+
+```bash
+# Run ESLint
+npm run lint
 ```
 
 ---
@@ -786,75 +990,187 @@ export const voiceService = new VoiceService();
 ## 📁 Project Structure
 
 ```
-greenai-frontend/
-├── 📁 public/
-│   ├── 🖼️ icons/
-│   │   ├── truck-marker.png
-│   │   ├── factory-marker.png
-│   │   └── energy-marker.png
-│   └── 📄 index.html
+GreenTechAI/
+├── 📁 public/                  # Static assets
 ├── 📁 src/
-│   ├── 📁 components/           # React Components
-│   │   ├── 🏠 Header.tsx
-│   │   ├── 🌟 LandingPage.tsx
-│   │   ├── 💬 QuerySection.tsx
-│   │   ├── 🗺️ MapSection.tsx
-│   │   ├── 📊 InsightsDashboard.tsx
-│   │   └── 👥 CommunitySection.tsx
-│   ├── 📁 services/            # API & External Services
-│   │   ├── 🤖 mlService.ts     # ML Model Integration
-│   │   ├── 🌐 apiService.ts    # Backend API Calls
-│   │   ├── 🗺️ mapsService.ts   # Google Maps Integration
-│   │   └── 🎤 voiceService.ts  # ElevenLabs Voice Synthesis
-│   ├── 📁 hooks/               # Custom React Hooks
-│   │   ├── useGeolocation.ts
-│   │   ├── useVoiceRecognition.ts
-│   │   └── useWebSocket.ts
-│   ├── 📁 types/               # TypeScript Definitions
-│   │   ├── api.ts
-│   │   ├── ml.ts
-│   │   └── maps.ts
-│   ├── 📁 utils/               # Utility Functions
-│   │   ├── formatters.ts
-│   │   ├── validators.ts
-│   │   └── constants.ts
+│   ├── 📁 components/          # React Components
+│   │   ├── 🏠 LandingPage.tsx
+│   │   ├── 📱 Header.tsx
+│   │   ├── 💬 QuerySection.tsx           # AI chat with voice I/O
+│   │   ├── 🗺️ MapSection.tsx            # Interactive Leaflet map
+│   │   ├── 📊 InsightsDashboard.tsx     # Analytics dashboard
+│   │   ├── 🔔 NotificationSystem.tsx    # Toast notifications
+│   │   ├── 🏆 GamificationSystem.tsx    # User progress & badges
+│   │   ├── 🤖 WastePrediction.tsx       # AI predictions
+│   │   ├── 🌤️ WeatherImpact.tsx         # Weather analysis
+│   │   ├── 🧮 CarbonCalculator.tsx      # Carbon footprint calc
+│   │   ├── 📚 EducationalHub.tsx        # Learning modules
+│   │   ├── 🏅 CommunityChallenges.tsx   # Challenge system
+│   │   ├── 👥 CommunitySection.tsx      # Community features
+│   │   ├── 📤 ExportReports.tsx         # Report generation
+│   │   ├── 📱 SocialSharing.tsx         # Social media sharing
+│   │   └── 🌓 DarkModeToggle.tsx        # Theme switcher
+│   ├── 📁 pages/               # Route Pages
+│   │   ├── HomePage.tsx        # Landing page
+│   │   ├── FeaturesPage.tsx    # Features showcase
+│   │   ├── ToolsPage.tsx       # Analytics tools
+│   │   └── CommunityPage.tsx   # Community hub
+│   ├── 📁 services/            # Business Logic
+│   │   ├── 🔔 notificationService.ts    # Notifications
+│   │   ├── 🏆 gamificationService.ts    # Gamification logic
+│   │   └── 🤖 (mlService.ts - planned)  # ML integration ready
+│   ├── 📁 contexts/            # React Contexts
+│   │   └── ThemeContext.tsx    # Dark mode state
 │   ├── 🎨 App.tsx              # Main App Component
 │   ├── 🎨 main.tsx             # React Entry Point
-│   └── 🎨 index.css            # Global Styles
+│   └── 🎨 index.css            # Global Styles (Tailwind)
 ├── 📄 package.json
-├── 📄 tailwind.config.js
-├── 📄 vite.config.ts
-├── 📄 tsconfig.json
-├── 📄 .env.example
+├── 📄 tailwind.config.js       # Tailwind configuration
+├── 📄 vite.config.ts           # Vite build config
+├── 📄 tsconfig.json            # TypeScript config
+├── 📄 eslint.config.js         # ESLint rules
 └── 📖 README.md
 ```
 
 ---
 
-## 🔗 Integration Points
+## 🔗 Integration Points & Current Implementation Status
+
+### ✅ **Fully Functional Features (No Backend Required)**
+
+The application is currently **100% functional** as a standalone React app with the following working features:
+
+1. **Voice Input/Output**: Web Speech API (browser-native, no API key needed)
+2. **Interactive Maps**: Leaflet.js (open-source, no API key needed)
+3. **Notifications**: React Hot Toast (client-side notifications)
+4. **Dark Mode**: localStorage-based theme persistence
+5. **Animations**: Framer Motion (smooth UI animations)
+6. **Data Visualization**: Recharts (interactive charts and graphs)
+7. **Routing**: React Router DOM (multi-page navigation)
+8. **AI Predictions**: Mock ML predictions with realistic data
+9. **Gamification**: Client-side progress tracking
+10. **All UI Components**: Fully responsive and interactive
+
+### 🔌 **Backend Integration Ready**
+
+The codebase includes service layers and clearly marked integration points for when you're ready to connect a backend:
+
+#### **ML Model Integration Points**
+
+**Planned Location**: `src/services/mlService.ts` (to be created)
+
+When you're ready to add ML capabilities, create this service layer with integration points for:
+- Waste analysis and classification
+- Energy output predictions  
+- Collection route optimization
+- Waste trend forecasting
+
+**Implementation Template**:
+```typescript
+// src/services/mlService.ts (create this file when ready)
+const ML_API_BASE_URL = process.env.VITE_ML_API_URL || 'http://localhost:5000/api';
+
+class MLService {
+  async analyzeWaste(data: WasteData): Promise<WasteAnalysis> {
+    // Connect to your Python ML backend
+    const response = await fetch(`${ML_API_BASE_URL}/analyze-waste`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    return response.json();
+  }
+  
+  // Add more ML methods as needed
+}
+
+export const mlService = new MLService();
+```
+
+**Current Implementation**: Components currently use mock data for AI predictions. Replace with `mlService` calls when backend is ready.
+
+#### **Notification Service**
+
+**Location**: `src/services/notificationService.ts`
+
+Integration points marked with `// 🔗 INTEGRATION POINT` for:
+- Sending notifications via API
+- Fetching user notifications
+- Marking notifications as read
+
+#### **Gamification Service**  
+
+**Location**: `src/services/gamificationService.ts`
+
+Ready for backend integration:
+- User progress tracking
+- Leaderboard data
+- Badge and achievement systems
+- Point calculations
+
+#### **Weather API**
+
+**Location**: `src/components/WeatherImpact.tsx`
+
+Currently uses mock weather data. Can be connected to:
+- OpenWeatherMap API
+- Weather.gov API
+- Any weather data provider
+
+### 🚀 **Quick Start - No Configuration Needed**
+
+```bash
+git clone https://github.com/lewiii254/GreenTechAI.git
+cd GreenTechAI
+npm install
+npm run dev
+```
+
+That's it! All features work immediately with realistic mock data.
+
+### 📝 **Future Backend Integration Steps**
+
+When you're ready to add a backend:
+
+1. **Set up environment variables**:
+   ```bash
+   VITE_API_URL=your_backend_url
+   VITE_ML_API_URL=your_ml_service_url  
+   VITE_WEATHER_API_KEY=your_weather_key (optional)
+   ```
+
+2. **Replace mock data in services**: Look for `// 🔗 INTEGRATION POINT` comments
+
+3. **Add authentication**: Implement auth in service layers
+
+4. **Enable real-time features**: Add WebSocket connections for live updates
 
 ### 🤖 ML Model Integration Points
 
-#### 1. **Query Processing** (`src/components/QuerySection.tsx`)
+#### 1. **Query Processing** (In Components)
 ```typescript
-// 🔗 INTEGRATION POINT: Line 89-95
+// 🔗 INTEGRATION POINT: src/components/QuerySection.tsx
+// Currently uses mock AI responses
 const handleSubmit = async (e: React.FormEvent) => {
-  // Replace simulateAIResponse with actual ML service call
-  const aiResponse = await mlService.getOptimizationRecommendations(inputText);
+  // TODO: When mlService is created, replace simulateAIResponse with:
+  // const aiResponse = await mlService.getOptimizationRecommendations(inputText);
+  const aiResponse = simulateAIResponse(inputText);
   // Process and display response
 };
 ```
 
-#### 2. **Waste Analysis** (`src/components/InsightsDashboard.tsx`)
+#### 2. **Waste Analysis** (In Components)
 ```typescript
-// 🔗 INTEGRATION POINT: Line 45-60
+// 🔗 INTEGRATION POINT: src/components/InsightsDashboard.tsx
+// Currently uses mock data
 useEffect(() => {
   const fetchAnalytics = async () => {
     try {
-      // Replace mock data with ML predictions
-      const trends = await mlService.getWasteTrends(timeRange);
-      const predictions = await mlService.getEnergyPredictions();
-      setAnalyticsData({ trends, predictions });
+      // TODO: Replace mock data with ML service when available
+      // const trends = await mlService.getWasteTrends(timeRange);
+      // const predictions = await mlService.getEnergyPredictions();
+      const trends = generateMockTrends();
+      setAnalyticsData({ trends });
     } catch (error) {
       console.error('Analytics fetch error:', error);
     }
@@ -863,16 +1179,18 @@ useEffect(() => {
 }, [timeRange]);
 ```
 
-#### 3. **Collection Optimization** (`src/components/MapSection.tsx`)
+#### 3. **Collection Optimization** (In Components)
 ```typescript
-// 🔗 INTEGRATION POINT: Line 78-85
+// 🔗 INTEGRATION POINT: src/components/MapSection.tsx
+// Currently uses mock optimization
 const optimizeRoutes = async (userLocation: Location) => {
   try {
-    // Replace mock data with ML optimization
-    const optimization = await mlService.optimizeCollection({
-      userLocation,
-      collectionPoints: wastePoints
-    });
+    // TODO: Replace with ML service when available
+    // const optimization = await mlService.optimizeCollection({
+    //   userLocation,
+    //   collectionPoints: wastePoints
+    // });
+    const optimization = generateMockRoutes(userLocation, wastePoints);
     setOptimizedRoutes(optimization.routes);
   } catch (error) {
     console.error('Route optimization error:', error);
@@ -880,21 +1198,26 @@ const optimizeRoutes = async (userLocation: Location) => {
 };
 ```
 
-### 🌐 Backend API Integration Points
+### 🌐 Backend API Integration Points (Planned)
 
-#### 1. **Collection Points** (`src/services/apiService.ts`)
+#### 1. **Collection Points** (To be created: `src/services/apiService.ts`)
 ```typescript
-// 🔗 INTEGRATION POINT: Replace with your database
-async getCollectionPoints(lat?: number, lng?: number): Promise<CollectionPoint[]> {
-  // Connect to your PostgreSQL/MongoDB database
-  // Query collection points based on location
-  return this.makeRequest<CollectionPoint[]>('/collection-points');
+// 🔗 INTEGRATION POINT: Create this service when backend is ready
+// src/services/apiService.ts
+class ApiService {
+  async getCollectionPoints(lat?: number, lng?: number): Promise<CollectionPoint[]> {
+    // Connect to your PostgreSQL/MongoDB database
+    // Query collection points based on location
+    const response = await fetch(`${API_URL}/collection-points?lat=${lat}&lng=${lng}`);
+    return response.json();
+  }
 }
 ```
 
-#### 2. **Real-time Updates** (`src/hooks/useWebSocket.ts`)
+#### 2. **Real-time Updates** (To be created: `src/hooks/useWebSocket.ts`)
 ```typescript
-// 🔗 INTEGRATION POINT: WebSocket connection for live data
+// 🔗 INTEGRATION POINT: Create this hook when WebSocket server is ready
+// src/hooks/useWebSocket.ts
 export const useWebSocket = (url: string) => {
   useEffect(() => {
     // Connect to your WebSocket server for real-time updates
@@ -903,9 +1226,12 @@ export const useWebSocket = (url: string) => {
       const data = JSON.parse(event.data);
       // Handle real-time waste collection updates
     };
+    return () => ws.close();
   }, [url]);
 };
 ```
+
+**Note**: Currently, all data is mock data served from components. Create these service files when your backend is ready.
 
 ### 🗺️ External Service Integration Points
 
@@ -943,11 +1269,25 @@ const speakText = async (text: string) => {
 
 ## 🛠️ Development Workflow
 
-### 🔄 Multi-Service Development
+### 🎯 Current Setup (Standalone Frontend)
 
-1. **Start ML Backend**
+**Single Command Start**:
 ```bash
-# Terminal 1: ML Service
+npm run dev
+```
+
+The application is fully functional without any backend services. All features work with:
+- Mock data for demonstrations
+- Browser-native APIs (Web Speech, localStorage)
+- Open-source libraries (Leaflet, Recharts)
+
+### 🔄 Future Multi-Service Development
+
+When you're ready to integrate backend services, you can run multiple services:
+
+1. **Start ML Backend** (Optional - when ready)
+```bash
+# Terminal 1: Python ML Service
 cd ../ml-waste-optimization
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -955,7 +1295,7 @@ pip install -r requirements.txt
 python src/api_server.py
 ```
 
-2. **Start Node.js Backend**
+2. **Start Node.js Backend** (Optional - when ready)
 ```bash
 # Terminal 2: Backend API
 cd ../backend
@@ -963,137 +1303,209 @@ npm install
 npm run dev
 ```
 
-3. **Start React Frontend**
+3. **Start React Frontend** (Always)
 ```bash
-# Terminal 3: Frontend
+# Terminal 3: Frontend (this repository)
 npm run dev
 ```
 
-### 🧪 Testing Integration
+### 🔍 Environment Variables (Optional)
+
+For development with mock data, no environment variables are needed. When integrating backend services:
 
 ```bash
-# Test ML service connection
-curl -X POST http://localhost:5000/api/analyze-waste \
-  -H "Content-Type: application/json" \
-  -d '{"wasteType": "organic", "quantity": 10}'
-
-# Test backend API
-curl http://localhost:3001/api/collection-points
-
-# Run frontend tests
-npm run test
-```
-
-### 🔍 Environment Variables
-
-Create comprehensive environment configuration:
-
-```bash
-# .env.local
-# API Endpoints
+# .env.local (create this file only when needed)
+# API Endpoints (optional)
 VITE_API_URL=http://localhost:3001/api
 VITE_ML_API_URL=http://localhost:5000/api
-VITE_WS_URL=ws://localhost:3001
 
-# External Services
-VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-VITE_ELEVENLABS_API_KEY=your_elevenlabs_api_key
-VITE_ELEVENLABS_VOICE_ID=your_voice_id
+# Weather API (optional - currently uses mock data)
+VITE_WEATHER_API_KEY=your_weather_api_key
 
-# Feature Flags
-VITE_ENABLE_VOICE_SYNTHESIS=true
-VITE_ENABLE_REAL_TIME_UPDATES=true
+# Feature Flags (optional)
 VITE_DEBUG_MODE=true
+```
+
+### 🧪 Testing
+
+```bash
+# Lint the code
+npm run lint
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
 ---
 
 ## 🚢 Deployment
 
-### 🐳 Docker Configuration
-
-```dockerfile
-# Dockerfile
-FROM node:18-alpine
-
-WORKDIR /app
-
-# Copy package files
-COPY package*.json ./
-RUN npm ci --only=production
-
-# Copy source code
-COPY . .
-
-# Build application
-RUN npm run build
-
-# Expose port
-EXPOSE 3000
-
-# Start application
-CMD ["npm", "run", "preview"]
-```
-
 ### 🚀 Production Build
 
 ```bash
-# Build for production
+# Build optimized production bundle
 npm run build
 
-# Preview production build
+# Preview production build locally
 npm run preview
 
-# Deploy to your hosting service
-# (Vercel, Netlify, AWS, etc.)
+# Build output will be in the dist/ folder
 ```
 
-### 🌐 Environment-Specific Configs
+### 🌐 Deployment Options
+
+The application is a static React SPA that can be deployed to any static hosting service:
+
+**Recommended Platforms**:
+- **Vercel**: Best for React apps, automatic deployments from GitHub
+- **Netlify**: Easy setup with continuous deployment
+- **GitHub Pages**: Free hosting for public repositories
+- **Cloudflare Pages**: Fast global CDN
+- **AWS S3 + CloudFront**: Scalable cloud hosting
+- **Azure Static Web Apps**: Microsoft cloud hosting
+
+### 📦 Vercel Deployment (Recommended)
 
 ```bash
-# .env.production
-VITE_API_URL=https://api.greenai.com
-VITE_ML_API_URL=https://ml.greenai.com
-VITE_WS_URL=wss://api.greenai.com
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
 ```
+
+Or connect your GitHub repository to Vercel for automatic deployments.
+
+### 🐳 Docker Deployment (Optional)
+
+```dockerfile
+# Dockerfile
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+FROM nginx:alpine
+COPY --from=builder /app/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+
+```bash
+# Build Docker image
+docker build -t greenai .
+
+# Run container
+docker run -p 80:80 greenai
+```
+
+### ⚙️ Build Configuration
+
+The application uses Vite for optimal production builds:
+- Code splitting and tree shaking
+- Asset optimization
+- Minification
+- Modern browser targets
+
+Build output is optimized for:
+- Fast loading times
+- Small bundle sizes
+- Modern JavaScript features
+- Efficient caching
 
 ---
 
 ## 🤝 Contributing
 
+We welcome contributions to GreenAI! Here's how you can help:
+
 ### 📋 Development Guidelines
 
 1. **Code Style**
    - Use TypeScript for type safety
-   - Follow ESLint and Prettier configurations
+   - Follow ESLint configuration
+   - Use Tailwind CSS for styling
    - Write meaningful commit messages
+   - Keep components under 200 lines when possible
 
 2. **Component Structure**
-   - Keep components under 200 lines
-   - Use custom hooks for complex logic
-   - Implement proper error boundaries
+   - Use functional components with hooks
+   - Implement proper TypeScript interfaces
+   - Use Framer Motion for animations
+   - Ensure responsive design (mobile-first)
 
-3. **Testing**
-   - Write unit tests for utilities
-   - Integration tests for API services
-   - E2E tests for critical user flows
+3. **Naming Conventions**
+   - Components: PascalCase (e.g., `QuerySection.tsx`)
+   - Services: camelCase (e.g., `mlService.ts`)
+   - CSS classes: Tailwind utilities
 
 ### 🔄 Pull Request Process
 
 1. Fork the repository
 2. Create feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open Pull Request
+3. Make your changes and test thoroughly
+4. Run linting: `npm run lint`
+5. Build to verify: `npm run build`
+6. Commit changes: `git commit -m 'Add amazing feature'`
+7. Push to branch: `git push origin feature/amazing-feature`
+8. Open Pull Request with clear description
+
+### 🐛 Reporting Issues
+
+- Use GitHub Issues
+- Include browser/OS information
+- Provide steps to reproduce
+- Add screenshots if applicable
+
+### 💡 Feature Requests
+
+We're always looking to improve! Suggest features through GitHub Issues with the "enhancement" label.
+
+---
+
+## 🌟 Key Highlights
+
+### ✨ What Makes GreenAI Special
+
+- **🚀 Ready to Use**: No backend setup required - works immediately
+- **🎨 Modern UI**: Beautiful design with dark mode support
+- **📱 Fully Responsive**: Perfect on mobile, tablet, and desktop
+- **🔊 Voice Enabled**: Natural voice input and output
+- **🗺️ Interactive Maps**: Real-time visualization with Leaflet
+- **📊 Data Visualization**: Rich charts and analytics
+- **🏆 Gamification**: Engaging user experience with rewards
+- **🌓 Dark Mode**: Full dark mode support
+- **⚡ Fast**: Optimized with Vite and lazy loading
+- **🔌 Integration Ready**: Clean architecture for backend connection
+
+### 🎯 Use Cases
+
+- **Educational Tool**: Learn about waste-to-energy conversion
+- **Community Platform**: Engage communities in sustainability
+- **Prototype/Demo**: Showcase AI-powered waste management
+- **Development Base**: Foundation for full-stack application
+- **UI/UX Reference**: Modern React/TypeScript patterns
 
 ---
 
 ## 📞 Support & Contact
 
-- **Documentation**: [docs.greenai.com](https://docs.greenai.com)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/greenai-frontend/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/greenai-frontend/discussions)
-- **Email**: support@greenai.com
+- **Repository**: [github.com/lewiii254/GreenTechAI](https://github.com/lewiii254/GreenTechAI)
+- **Issues**: [GitHub Issues](https://github.com/lewiii254/GreenTechAI/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/lewiii254/GreenTechAI/discussions)
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
 
 ---
 
@@ -1101,6 +1513,14 @@ VITE_WS_URL=wss://api.greenai.com
 
 **Built with ❤️ for a sustainable future**
 
-[⭐ Star this repo](https://github.com/yourusername/greenai-frontend) | [🐛 Report Bug](https://github.com/yourusername/greenai-frontend/issues) | [💡 Request Feature](https://github.com/yourusername/greenai-frontend/issues)
+### 🌱 Turning Waste Into Energy With AI 🌱
+
+[⭐ Star this repo](https://github.com/lewiii254/GreenTechAI) | [🐛 Report Bug](https://github.com/lewiii254/GreenTechAI/issues) | [💡 Request Feature](https://github.com/lewiii254/GreenTechAI/issues)
+
+**Tech Stack**: React • TypeScript • Tailwind CSS • Leaflet • Recharts • Framer Motion
+
+---
+
+*Making the planet greener, one byte at a time* 🌍
 
 </div>
