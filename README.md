@@ -4,16 +4,22 @@
 
 ![GreenAI Logo](https://via.placeholder.com/200x80/10B981/FFFFFF?text=GreenAI)
 
-**Turning Waste Into Energy With AI**
+### 🚀 **Turning Waste Into Energy With AI** 🌍
 
-[![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-5.4.2-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
-[![React Router](https://img.shields.io/badge/React_Router-7.9.5-CA4245?style=for-the-badge&logo=react-router)](https://reactrouter.com/)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23.13-0055FF?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
-[![Leaflet](https://img.shields.io/badge/Leaflet-1.9.4-199900?style=for-the-badge&logo=leaflet)](https://leafletjs.com/)
+[![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-5.4.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+
+[![React Router](https://img.shields.io/badge/React_Router-7.9.5-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23.13-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![Leaflet](https://img.shields.io/badge/Leaflet-1.9.4-199900?style=for-the-badge&logo=leaflet&logoColor=white)](https://leafletjs.com/)
 [![Recharts](https://img.shields.io/badge/Recharts-3.2.1-22B5BF?style=for-the-badge)](https://recharts.org/)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
+[![GitHub Stars](https://img.shields.io/github/stars/lewiii254/GreenTechAI?style=for-the-badge)](https://github.com/lewiii254/GreenTechAI/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/lewiii254/GreenTechAI?style=for-the-badge)](https://github.com/lewiii254/GreenTechAI/network/members)
 
 </div>
 
@@ -21,10 +27,19 @@
 
 ## 📋 Table of Contents
 
-- [🎯 Project Overview](#-project-overview)
+- [🌟 Overview](#-overview)
+  - [🎯 Project Overview](#-project-overview)
+  - [📸 Screenshots & Demos](#-screenshots--demos)
+  - [🎨 Design Philosophy](#-design-philosophy)
 - [✨ Features](#-features)
 - [🏗️ Architecture](#️-architecture)
+  - [🔄 System Architecture](#-system-architecture)
+  - [💾 Data Flow Diagram](#-data-flow-diagram)
+  - [🧩 Component Hierarchy](#-component-hierarchy)
 - [🚀 Quick Start](#-quick-start)
+  - [📋 Prerequisites](#-prerequisites)
+  - [⚡ Installation](#-installation)
+  - [🎮 Running the Application](#-running-the-application)
 - [🤖 ML Model Integration](#-ml-model-integration)
 - [🔌 API Integration Guide](#-api-integration-guide)
 - [🗺️ External Services Setup](#️-external-services-setup)
@@ -32,243 +47,497 @@
 - [🔗 Integration Points](#-integration-points)
 - [🛠️ Development Workflow](#️-development-workflow)
 - [🚢 Deployment](#-deployment)
+  - [🌐 Deployment Architecture](#-deployment-architecture)
+  - [📦 Deployment Options](#-deployment-options)
 - [🤝 Contributing](#-contributing)
+  - [🔄 Contribution Flow](#-contribution-flow)
+  - [📝 Code Standards](#-code-standards)
+- [📞 Support & Resources](#-support--resources)
+- [📄 License](#-license)
 
 ---
 
-## 🎯 Project Overview
+## 🌟 Overview
 
-GreenAI is an AI-powered waste-to-energy optimization platform that helps communities transform waste into clean, renewable energy. The platform combines machine learning algorithms with an intuitive React frontend to provide intelligent waste management solutions.
+### 🎯 Project Overview
+
+GreenAI is a cutting-edge **AI-powered waste-to-energy optimization platform** that revolutionizes how communities transform waste into clean, renewable energy. By combining advanced machine learning algorithms with an intuitive React frontend, we provide intelligent waste management solutions that are both powerful and accessible.
+
+<div align="center">
+
+```mermaid
+graph LR
+    A[♻️ Waste Collection] --> B[🤖 AI Analysis]
+    B --> C[⚡ Energy Production]
+    C --> D[🌍 Environmental Impact]
+    D --> E[📊 Community Benefits]
+    E --> A
+    
+    style A fill:#10B981,stroke:#059669,color:#fff
+    style B fill:#3B82F6,stroke:#2563EB,color:#fff
+    style C fill:#F59E0B,stroke:#D97706,color:#fff
+    style D fill:#059669,stroke:#047857,color:#fff
+    style E fill:#8B5CF6,stroke:#7C3AED,color:#fff
+```
+
+</div>
+
+### 📸 Screenshots & Demos
+
+<div align="center">
+
+| 🏠 **Landing Page** | 🗺️ **Interactive Map** |
+|:---:|:---:|
+| *Beautiful hero section with smooth animations* | *Real-time waste collection point visualization* |
+| ![Landing Page](https://via.placeholder.com/400x250/10B981/FFFFFF?text=Landing+Page) | ![Interactive Map](https://via.placeholder.com/400x250/3B82F6/FFFFFF?text=Interactive+Map) |
+
+| 📊 **Analytics Dashboard** | 💬 **AI Query Interface** |
+|:---:|:---:|
+| *Comprehensive insights & predictions* | *Voice-enabled natural language queries* |
+| ![Dashboard](https://via.placeholder.com/400x250/8B5CF6/FFFFFF?text=Analytics+Dashboard) | ![AI Chat](https://via.placeholder.com/400x250/F59E0B/FFFFFF?text=AI+Query) |
+
+| 🌓 **Dark Mode** | 🏆 **Gamification** |
+|:---:|:---:|
+| *Seamless dark theme support* | *Engaging rewards & achievements* |
+| ![Dark Mode](https://via.placeholder.com/400x250/1F2937/FFFFFF?text=Dark+Mode) | ![Gamification](https://via.placeholder.com/400x250/EF4444/FFFFFF?text=Gamification) |
+
+</div>
+
+> 💡 **Note:** Replace placeholder images with actual screenshots from your deployed application for the best impact!
 
 ### 🎨 Design Philosophy
-- **Eco-friendly UI**: Green/blue color palette reflecting environmental consciousness
-- **Mobile-first**: Responsive design optimized for all devices
-- **Accessibility**: WCAG 2.1 compliant with proper contrast ratios
-- **Performance**: Optimized bundle size and lazy loading
-- **Dark Mode**: Full dark mode support with smooth transitions
-- **Modern Stack**: Built with React 18, TypeScript 5, Tailwind CSS 3, and Framer Motion
+
+<div align="center">
+
+```mermaid
+mindmap
+  root((🎨 Design<br/>Philosophy))
+    🌿 Eco-friendly
+      Green/Blue palette
+      Nature-inspired
+      Sustainability focus
+    📱 Mobile-first
+      Responsive design
+      Touch-optimized
+      Progressive enhancement
+    ♿ Accessibility
+      WCAG 2.1 compliant
+      Screen reader support
+      Keyboard navigation
+    ⚡ Performance
+      Lazy loading
+      Code splitting
+      Optimized bundles
+    🎭 Modern UX
+      Smooth animations
+      Intuitive navigation
+      Engaging interactions
+    🌓 Adaptability
+      Dark mode
+      Theme persistence
+      User preferences
+```
+
+</div>
+
+**Core Principles:**
+- 🌿 **Eco-friendly UI**: Green/blue color palette reflecting environmental consciousness
+- 📱 **Mobile-first**: Responsive design optimized for all devices (phones, tablets, desktops)
+- ♿ **Accessibility**: WCAG 2.1 compliant with proper contrast ratios and semantic HTML
+- ⚡ **Performance**: Optimized bundle size with lazy loading and code splitting
+- 🌓 **Dark Mode**: Full dark mode support with smooth transitions
+- 🎯 **Modern Stack**: Built with React 18, TypeScript 5, Tailwind CSS 3, and Framer Motion
 
 ---
 
 ## ✨ Features
 
-### 🏠 **Landing Page**
-- Compelling branding with animated hero section
-- Clear value proposition and call-to-action
-- Feature highlights with smooth animations
-- Responsive design with Framer Motion animations
-- Gradient backgrounds and modern UI elements
+<div align="center">
 
-### 🗣️ **AI Query Interface**
-- **Text Input**: Natural language processing for waste optimization queries
-- **Voice Input**: Web Speech API integration for hands-free interaction (browser-native)
-- **Voice Output**: Text-to-speech responses with customizable speech synthesis
-- **Chat Interface**: Styled conversation bubbles with typing indicators
-- **Real-time Processing**: Instant AI responses with loading states
-- **Conversation History**: Track and display chat message history
+### 🌟 Comprehensive Waste-to-Energy Management Platform
+
+</div>
+
+### 🏠 **Landing Page**
+- 🎯 Compelling branding with animated hero section
+- 💎 Clear value proposition and call-to-action
+- ✨ Feature highlights with smooth Framer Motion animations
+- 📱 Responsive design across all devices
+- 🎨 Gradient backgrounds and modern UI elements
+
+### 💬 **AI Query Interface**
+- 📝 **Text Input**: Natural language processing for waste optimization queries
+- 🎤 **Voice Input**: Web Speech API integration for hands-free interaction (browser-native)
+- 🔊 **Voice Output**: Text-to-speech responses with customizable speech synthesis
+- 💭 **Chat Interface**: Styled conversation bubbles with typing indicators
+- ⚡ **Real-time Processing**: Instant AI responses with loading states
+- 📜 **Conversation History**: Track and display chat message history
 
 ### 🗺️ **Interactive Map (Leaflet-based)**
-- Real-time waste collection points visualization using React Leaflet
-- Marker clustering for better performance with many locations
-- Nearest point highlighting with distance calculations
-- Directions and route planning
-- Capacity and efficiency metrics display
-- Interactive tooltips and popups
-- Support for multiple location types (collection points, processing centers, energy plants)
+- 📍 Real-time waste collection points visualization using React Leaflet
+- 🎯 Marker clustering for better performance with many locations
+- 🏁 Nearest point highlighting with distance calculations
+- 🧭 Directions and route planning
+- 📊 Capacity and efficiency metrics display
+- 💡 Interactive tooltips and popups
+- 🏭 Support for multiple location types (collection points, processing centers, energy plants)
 
 ### 📊 **Insights Dashboard**
-- **Waste Analytics**: Weekly, monthly, and yearly generation trends
-- **Energy Metrics**: Predicted output and conversion efficiency
-- **Impact Visualization**: CO₂ reduction and environmental benefits
-- **Interactive Charts**: Built with Recharts for responsive data display
-- **Time-based Filtering**: View trends across different time periods
-- **Real-time Data Updates**: Dynamic data visualization
+- 📈 **Waste Analytics**: Weekly, monthly, and yearly generation trends
+- ⚡ **Energy Metrics**: Predicted output and conversion efficiency
+- 🌍 **Impact Visualization**: CO₂ reduction and environmental benefits
+- 📉 **Interactive Charts**: Built with Recharts for responsive data display
+- ⏰ **Time-based Filtering**: View trends across different time periods
+- 🔄 **Real-time Data Updates**: Dynamic data visualization
 
 ### 🤖 **AI-Powered Waste Prediction**
-- **Predictive Analytics**: ML-based waste volume forecasting
-- **Trend Analysis**: Identify patterns in waste generation
-- **Confidence Scores**: Model accuracy metrics (92%+ accuracy)
-- **Smart Insights**: Automated recommendations based on predictions
-- **Multiple Timeframes**: Week, month, and quarter predictions
-- **Visual Predictions**: Area charts showing actual vs predicted data
-- **Actionable Recommendations**: Optimize collection routes and schedules
+- 🔮 **Predictive Analytics**: ML-based waste volume forecasting
+- 📈 **Trend Analysis**: Identify patterns in waste generation
+- 🎯 **Confidence Scores**: Model accuracy metrics (92%+ accuracy)
+- 💡 **Smart Insights**: Automated recommendations based on predictions
+- ⏳ **Multiple Timeframes**: Week, month, and quarter predictions
+- 📉 **Visual Predictions**: Area charts showing actual vs predicted data
+- 🚀 **Actionable Recommendations**: Optimize collection routes and schedules
 
 ### 🌤️ **Weather Impact Analysis**
-- Real-time weather data integration
-- Impact analysis on waste collection efficiency
-- Temperature, humidity, and precipitation tracking
-- Weather-based optimization recommendations
-- Visual impact indicators (positive, negative, neutral)
-- Collection schedule adjustments based on weather
+- ☀️ Real-time weather data integration
+- 📊 Impact analysis on waste collection efficiency
+- 🌡️ Temperature, humidity, and precipitation tracking
+- 💡 Weather-based optimization recommendations
+- 🎯 Visual impact indicators (positive, negative, neutral)
+- 📅 Collection schedule adjustments based on weather
 
 ### 🧮 **Carbon Footprint Calculator**
-- Calculate carbon savings from waste-to-energy conversion
-- Multiple waste type support (organic, plastic, paper, mixed)
-- Frequency-based calculations (daily, weekly, monthly)
-- Equivalency metrics:
-  - Trees planted equivalent
-  - Car miles driven equivalent
-  - Homes powered
-  - Energy generated (kWh)
-- Visual results with animated statistics
-- Shareable impact reports
+- 🌱 Calculate carbon savings from waste-to-energy conversion
+- ♻️ Multiple waste type support (organic, plastic, paper, mixed)
+- 📅 Frequency-based calculations (daily, weekly, monthly)
+- 📊 **Equivalency metrics**:
+  - 🌳 Trees planted equivalent
+  - 🚗 Car miles driven equivalent
+  - 🏠 Homes powered
+  - ⚡ Energy generated (kWh)
+- 📈 Visual results with animated statistics
+- 📤 Shareable impact reports
 
 ### 📚 **Educational Hub**
-- Interactive learning modules on waste-to-energy
-- Progress tracking for courses
-- Multiple difficulty levels (beginner, intermediate, advanced)
-- Topics covered:
-  - Introduction to Waste-to-Energy
-  - Science Behind Energy Generation
-  - Waste Sorting & Classification
-  - Environmental Impact Assessment
-  - AI in Waste Management
-  - Community Best Practices
-- Duration estimates and completion badges
+- 📖 Interactive learning modules on waste-to-energy
+- 📊 Progress tracking for courses
+- 🎓 Multiple difficulty levels (beginner, intermediate, advanced)
+- 💡 **Topics covered**:
+  - 🌱 Introduction to Waste-to-Energy
+  - 🔬 Science Behind Energy Generation
+  - ♻️ Waste Sorting & Classification
+  - 🌍 Environmental Impact Assessment
+  - 🤖 AI in Waste Management
+  - 👥 Community Best Practices
+- ⏱️ Duration estimates and completion badges
 
 ### 👥 **Community Engagement**
-- FAQ section with expandable answers
-- Feedback form for community suggestions
-- New waste point reporting system
-- Community statistics and engagement metrics
-- Social features and user interactions
+- ❓ FAQ section with expandable answers
+- 📝 Feedback form for community suggestions
+- 📍 New waste point reporting system
+- 📊 Community statistics and engagement metrics
+- 🤝 Social features and user interactions
 
 ### 🔔 **Smart Notifications & Alerts**
-- Real-time notification system with toast messages
-- Multiple notification types:
-  - Waste collection schedules
-  - Energy generation milestones
-  - Community updates
-  - Achievement and badge unlocks
-- Priority-based notifications (low, medium, high)
-- Notification history and read/unread status
-- Actionable notifications with deep links
-- Customizable notification preferences
-- Desktop notifications support
+- 🍞 Real-time notification system with toast messages
+- 📬 **Multiple notification types**:
+  - 🚛 Waste collection schedules
+  - ⚡ Energy generation milestones
+  - 📢 Community updates
+  - 🏅 Achievement and badge unlocks
+- 🎯 Priority-based notifications (low, medium, high)
+- 📜 Notification history and read/unread status
+- 🔗 Actionable notifications with deep links
+- ⚙️ Customizable notification preferences
+- 💻 Desktop notifications support
 
 ### 🏆 **Gamification & Rewards System**
-- **User Profiles**: Comprehensive user progress tracking
-  - Level and XP progression system
-  - Avatar and profile customization
-  - Personal statistics dashboard
-- **Achievement Badges**: Multiple badge rarities (common, rare, epic, legendary)
-- **Leaderboards**: 
-  - Weekly, monthly, and all-time rankings
-  - Different categories (waste collected, energy generated, impact score)
-  - Top 10 user display
-- **Point-based Rewards**: Earn points for various activities
-- **Progress Tracking**: Visual progress bars and statistics
-- **Environmental Impact Score**: Combined metric of all activities
-- **User Statistics**:
-  - Total waste collected
-  - Energy generated
-  - CO₂ saved
-  - Days active
-  - Collection streak
+- 👤 **User Profiles**: Comprehensive user progress tracking
+  - 📊 Level and XP progression system
+  - 🎨 Avatar and profile customization
+  - 📈 Personal statistics dashboard
+- 🏅 **Achievement Badges**: Multiple badge rarities (common, rare, epic, legendary)
+- 🏆 **Leaderboards**: 
+  - 📅 Weekly, monthly, and all-time rankings
+  - 🎯 Different categories (waste collected, energy generated, impact score)
+  - 🥇 Top 10 user display
+- 💎 **Point-based Rewards**: Earn points for various activities
+- 📊 **Progress Tracking**: Visual progress bars and statistics
+- 🌍 **Environmental Impact Score**: Combined metric of all activities
+- 📈 **User Statistics**:
+  - ♻️ Total waste collected
+  - ⚡ Energy generated
+  - 🌱 CO₂ saved
+  - 📅 Days active
+  - 🔥 Collection streak
 
 ### 🏅 **Community Challenges**
-- **Multiple Challenge Types**:
-  - Individual challenges
-  - Team competitions
-  - Community-wide goals
-- **Real-time Progress**: Track challenge completion
-- **Difficulty Levels**: Easy, medium, and hard challenges
-- **Time-limited Events**: Countdown timers for active challenges
-- **Rewards**: Points and badges for completion
-- **Participant Counts**: See how many are participating
-- **Challenge Categories**:
-  - Waste collection goals
-  - Energy generation targets
-  - Sustainability streaks
+- 🎯 **Multiple Challenge Types**:
+  - 👤 Individual challenges
+  - 👥 Team competitions
+  - 🌍 Community-wide goals
+- ⏱️ **Real-time Progress**: Track challenge completion
+- 🎚️ **Difficulty Levels**: Easy, medium, and hard challenges
+- ⏰ **Time-limited Events**: Countdown timers for active challenges
+- 🎁 **Rewards**: Points and badges for completion
+- 👥 **Participant Counts**: See how many are participating
+- 📊 **Challenge Categories**:
+  - ♻️ Waste collection goals
+  - ⚡ Energy generation targets
+  - 🌱 Sustainability streaks
 
 ### 📤 **Report Export System**
-- Generate comprehensive reports in multiple formats (PDF, CSV, JSON)
-- Report types:
-  - Environmental Impact Reports
-  - Waste Analytics Reports
-  - Collection Statistics
-  - Energy Generation Reports
-- Customizable report sections
-- Date range selection (week, month, quarter, year)
-- Automated data compilation
-- Professional formatting with charts and graphs
+- 📄 Generate comprehensive reports in multiple formats (PDF, CSV, JSON)
+- 📊 **Report types**:
+  - 🌍 Environmental Impact Reports
+  - ♻️ Waste Analytics Reports
+  - 📈 Collection Statistics
+  - ⚡ Energy Generation Reports
+- ⚙️ Customizable report sections
+- 📅 Date range selection (week, month, quarter, year)
+- 🤖 Automated data compilation
+- 🎨 Professional formatting with charts and graphs
 
 ### 📱 **Social Sharing**
-- Share environmental achievements on social media
-- Supported platforms:
-  - Facebook
-  - Twitter (X)
-  - LinkedIn
-  - Instagram
-- Auto-generated shareable content
-- Custom graphics for social posts
-- Impact metrics in share messages
-- Copy-to-clipboard functionality
+- 🌐 Share environmental achievements on social media
+- 📢 **Supported platforms**:
+  - 📘 Facebook
+  - 🐦 Twitter (X)
+  - 💼 LinkedIn
+  - 📸 Instagram
+- ✨ Auto-generated shareable content
+- 🎨 Custom graphics for social posts
+- 📊 Impact metrics in share messages
+- 📋 Copy-to-clipboard functionality
 
 ### 🌓 **Dark Mode Support**
-- Full application dark mode
-- Smooth transition animations
-- Persistent theme preference (localStorage)
-- System preference detection
-- All components optimized for dark mode
-- Proper contrast ratios maintained
+- 🌙 Full application dark mode
+- ✨ Smooth transition animations
+- 💾 Persistent theme preference (localStorage)
+- 🖥️ System preference detection
+- 🎨 All components optimized for dark mode
+- ♿ Proper contrast ratios maintained
 
 ### 📱 **Multi-Page Application**
-- **Home Page**: Landing page with hero section and feature overview
-- **Features Page**: AI Query, Map, Weather Impact, and Insights Dashboard
-- **Tools Page**: Waste Prediction, Carbon Calculator, and Export Reports
-- **Community Page**: Challenges, Educational Hub, and Community Section
-- React Router for smooth navigation
-- Responsive design across all pages
+- 🏠 **Home Page**: Landing page with hero section and feature overview
+- ✨ **Features Page**: AI Query, Map, Weather Impact, and Insights Dashboard
+- 🔧 **Tools Page**: Waste Prediction, Carbon Calculator, and Export Reports
+- 👥 **Community Page**: Challenges, Educational Hub, and Community Section
+- 🚦 React Router for smooth navigation
+- 📱 Responsive design across all pages
 
 ---
 
 ## 🏗️ Architecture
 
+### 🔄 System Architecture
+
+<div align="center">
+
 ```mermaid
 graph TB
-    A[React Frontend - SPA] --> B[React Router]
-    B --> C[Home Page]
-    B --> D[Features Page]
-    B --> E[Tools Page]
-    B --> F[Community Page]
+    subgraph "🎨 Frontend Layer"
+        A[React SPA] --> B[React Router]
+        B --> C1[🏠 Home Page]
+        B --> C2[✨ Features Page]
+        B --> C3[🔧 Tools Page]
+        B --> C4[👥 Community Page]
+    end
     
-    A --> G[Services Layer]
-    G --> H[Notification Service]
-    G --> I[Gamification Service]
-    G --> J[ML Service - Ready for Integration]
+    subgraph "🔧 Services Layer"
+        D1[🔔 Notification Service]
+        D2[🏆 Gamification Service]
+        D3[🤖 ML Service]
+        D4[🗺️ Maps Service]
+        D5[🌤️ Weather Service]
+    end
     
-    A --> K[State Management]
-    K --> L[Theme Context - Dark Mode]
-    K --> M[Local Storage]
+    subgraph "💾 State Management"
+        E1[🌓 Theme Context]
+        E2[💾 Local Storage]
+        E3[⚡ React State]
+    end
     
-    A --> N[External Libraries]
-    N --> O[React Leaflet - Maps]
-    N --> P[Recharts - Analytics]
-    N --> Q[Framer Motion - Animations]
-    N --> R[Lucide React - Icons]
+    subgraph "📚 External Libraries"
+        F1[🗺️ React Leaflet]
+        F2[📊 Recharts]
+        F3[🎬 Framer Motion]
+        F4[🎨 Lucide Icons]
+        F5[🍞 React Hot Toast]
+    end
     
-    A --> S[API Integration Points]
-    S --> T[Backend API - Ready]
-    S --> U[Python ML Backend - Ready]
-    S --> V[Weather API - Ready]
+    subgraph "🔌 API Integration Points"
+        G1[🖥️ Backend API]
+        G2[🐍 Python ML Backend]
+        G3[🌦️ Weather API]
+    end
+    
+    A --> D1 & D2 & D3 & D4 & D5
+    A --> E1 & E2 & E3
+    A --> F1 & F2 & F3 & F4 & F5
+    D1 & D2 & D3 & D4 & D5 -.->|Ready for Integration| G1 & G2 & G3
+    
+    style A fill:#10B981,stroke:#059669,color:#fff
+    style D1 fill:#3B82F6,stroke:#2563EB,color:#fff
+    style D2 fill:#3B82F6,stroke:#2563EB,color:#fff
+    style D3 fill:#3B82F6,stroke:#2563EB,color:#fff
+    style D4 fill:#3B82F6,stroke:#2563EB,color:#fff
+    style D5 fill:#3B82F6,stroke:#2563EB,color:#fff
+    style E1 fill:#8B5CF6,stroke:#7C3AED,color:#fff
+    style E2 fill:#8B5CF6,stroke:#7C3AED,color:#fff
+    style E3 fill:#8B5CF6,stroke:#7C3AED,color:#fff
+    style F1 fill:#F59E0B,stroke:#D97706,color:#fff
+    style F2 fill:#F59E0B,stroke:#D97706,color:#fff
+    style F3 fill:#F59E0B,stroke:#D97706,color:#fff
+    style F4 fill:#F59E0B,stroke:#D97706,color:#fff
+    style F5 fill:#F59E0B,stroke:#D97706,color:#fff
 ```
 
+</div>
+
+### 💾 Data Flow Diagram
+
+<div align="center">
+
+```mermaid
+sequenceDiagram
+    participant 👤 User
+    participant 🎨 Frontend
+    participant 🔧 Services
+    participant 🤖 ML Backend
+    participant 💾 Storage
+    
+    👤 User->>🎨 Frontend: 🎤 Voice/Text Input
+    🎨 Frontend->>🎨 Frontend: 🎯 Process Input (Web Speech API)
+    🎨 Frontend->>🔧 Services: 📤 Send Query
+    
+    alt ML Processing
+        🔧 Services->>🤖 ML Backend: 🔍 Analyze Waste Data
+        🤖 ML Backend->>🤖 ML Backend: 🧠 ML Model Inference
+        🤖 ML Backend->>🔧 Services: 📊 Predictions & Recommendations
+    else Mock Data (Current)
+        🔧 Services->>🔧 Services: 🎭 Generate Mock Response
+    end
+    
+    🔧 Services->>💾 Storage: 💾 Save to localStorage
+    🔧 Services->>🎨 Frontend: 📥 Return Results
+    🎨 Frontend->>🎨 Frontend: 📊 Update UI (Recharts)
+    🎨 Frontend->>🎨 Frontend: 🔊 Text-to-Speech
+    🎨 Frontend->>👤 User: ✅ Display Results + Voice Output
+    
+    Note over 👤 User,💾 Storage: 🔄 Real-time updates via React state & Context API
+```
+
+</div>
+
+### 🧩 Component Hierarchy
+
+<div align="center">
+
+```mermaid
+graph TD
+    A[🎯 App.tsx<br/>Root Component] --> B[🎨 ThemeContext<br/>Dark Mode Provider]
+    B --> C[🚦 React Router]
+    
+    C --> D1[🏠 HomePage]
+    C --> D2[✨ FeaturesPage]
+    C --> D3[🔧 ToolsPage]
+    C --> D4[👥 CommunityPage]
+    
+    D1 --> E1[🎭 LandingPage]
+    D1 --> E2[📱 Header]
+    
+    D2 --> F1[💬 QuerySection<br/>AI Chat + Voice]
+    D2 --> F2[🗺️ MapSection<br/>Leaflet Maps]
+    D2 --> F3[🌤️ WeatherImpact]
+    D2 --> F4[📊 InsightsDashboard]
+    
+    D3 --> G1[🤖 WastePrediction<br/>ML Forecasting]
+    D3 --> G2[🧮 CarbonCalculator]
+    D3 --> G3[📤 ExportReports]
+    
+    D4 --> H1[🏅 CommunityChallenges]
+    D4 --> H2[📚 EducationalHub]
+    D4 --> H3[🤝 CommunitySection]
+    
+    A --> I1[🔔 NotificationSystem<br/>Global Toasts]
+    A --> I2[🏆 GamificationSystem<br/>Badges & Rewards]
+    A --> I3[📱 SocialSharing]
+    A --> I4[🌓 DarkModeToggle]
+    
+    style A fill:#10B981,stroke:#059669,color:#fff,stroke-width:3px
+    style B fill:#8B5CF6,stroke:#7C3AED,color:#fff
+    style C fill:#3B82F6,stroke:#2563EB,color:#fff
+    style D1 fill:#F59E0B,stroke:#D97706,color:#fff
+    style D2 fill:#F59E0B,stroke:#D97706,color:#fff
+    style D3 fill:#F59E0B,stroke:#D97706,color:#fff
+    style D4 fill:#F59E0B,stroke:#D97706,color:#fff
+```
+
+</div>
+
 ### 🔄 Data Flow
-1. **User Input** → Frontend captures text/voice queries via Web Speech API
-2. **Service Layer** → Routes requests to appropriate services (notification, gamification, ML)
-3. **ML Processing** → Python backend integration points ready for waste optimization
-4. **Local State** → React state management with Context API for theme and user preferences
-5. **Data Storage** → localStorage for user preferences, ready for backend database integration
-6. **Real-time Updates** → Toast notifications with react-hot-toast
-7. **External Integration** → Leaflet maps, voice synthesis, and weather data integration points
+
+```mermaid
+flowchart LR
+    subgraph Input["📥 User Input"]
+        A1[🎤 Voice Input]
+        A2[⌨️ Text Input]
+        A3[🖱️ UI Interaction]
+    end
+    
+    subgraph Processing["⚙️ Processing Layer"]
+        B1[🎯 Service Router]
+        B2[🔔 Notification Service]
+        B3[🏆 Gamification Service]
+        B4[🤖 ML Service]
+    end
+    
+    subgraph State["💾 State Management"]
+        C1[⚛️ React State]
+        C2[🌓 Theme Context]
+        C3[💽 localStorage]
+    end
+    
+    subgraph Output["📤 Output & Display"]
+        D1[📊 Data Visualization]
+        D2[🗺️ Map Updates]
+        D3[🔊 Voice Output]
+        D4[🍞 Toast Notifications]
+    end
+    
+    Input --> B1
+    B1 --> B2 & B3 & B4
+    B2 & B3 & B4 --> C1
+    C1 <--> C2 <--> C3
+    C1 --> Output
+    
+    style Input fill:#10B981,stroke:#059669,color:#fff
+    style Processing fill:#3B82F6,stroke:#2563EB,color:#fff
+    style State fill:#8B5CF6,stroke:#7C3AED,color:#fff
+    style Output fill:#F59E0B,stroke:#D97706,color:#fff
+```
+
+**Key Data Flow Stages:**
+
+1. **📥 User Input** → Frontend captures text/voice queries via Web Speech API
+2. **⚙️ Service Layer** → Routes requests to appropriate services (notification, gamification, ML)
+3. **🤖 ML Processing** → Python backend integration points ready for waste optimization
+4. **💾 Local State** → React state management with Context API for theme and user preferences
+5. **💽 Data Storage** → localStorage for user preferences, ready for backend database integration
+6. **📤 Real-time Updates** → Toast notifications with react-hot-toast
+7. **🌐 External Integration** → Leaflet maps, voice synthesis, and weather data integration points
 
 ### 🧩 Component Architecture
-- **Pages**: Top-level route components (Home, Features, Tools, Community)
-- **Components**: Reusable UI components with consistent styling
-- **Services**: Business logic and API integration layer
-- **Contexts**: Global state management (Theme/Dark Mode)
-- **Hooks**: Custom React hooks (planned for geolocation, WebSocket, etc.)
+
+**Component Organization:**
+
+- **📄 Pages**: Top-level route components (Home, Features, Tools, Community)
+- **🧱 Components**: Reusable UI components with consistent styling
+- **🔧 Services**: Business logic and API integration layer
+- **🎭 Contexts**: Global state management (Theme/Dark Mode)
+- **🪝 Hooks**: Custom React hooks (planned for geolocation, WebSocket, etc.)
 
 ---
 
@@ -276,96 +545,107 @@ graph TB
 
 ### 📋 Prerequisites
 
+<div align="center">
+
+| 🛠️ Tool | 📦 Version Required | 📥 Download |
+|:---:|:---:|:---:|
+| **Node.js** | `>= 18.0.0` | [nodejs.org](https://nodejs.org/) |
+| **npm** | `>= 9.0.0` | (comes with Node.js) |
+| **Git** | `>= 2.30.0` | [git-scm.com](https://git-scm.com/) |
+
+</div>
+
+### ⚡ Installation
+
+Follow these simple steps to get started:
+
 ```bash
-# Required versions
-Node.js >= 18.0.0
-npm >= 9.0.0
-Git >= 2.30.0
-```
-
-### 🛠️ Technology Stack
-
-**Frontend Core:**
-- React 18.3.1 - UI library
-- TypeScript 5.5.3 - Type safety
-- Vite 5.4.2 - Build tool and dev server
-- Tailwind CSS 3.4.1 - Utility-first CSS framework
-
-**Routing & Navigation:**
-- React Router DOM 7.9.5 - Client-side routing
-
-**UI & Animations:**
-- Framer Motion 12.23.13 - Animation library
-- Lucide React 0.344.0 - Icon library
-
-**Data Visualization:**
-- Recharts 3.2.1 - Chart library
-
-**Maps & Geolocation:**
-- React Leaflet 4.2.1 - Map component
-- Leaflet 1.9.4 - Map library
-- React Leaflet Cluster 3.1.1 - Marker clustering
-
-**Notifications:**
-- React Hot Toast 2.6.0 - Toast notifications
-
-**Utilities:**
-- date-fns 4.1.0 - Date formatting
-- @supabase/supabase-js 2.57.4 - Ready for backend integration
-
-**Development Tools:**
-- ESLint 9.9.1 - Code linting
-- TypeScript ESLint - TypeScript linting
-- PostCSS & Autoprefixer - CSS processing
-
-### 🛠️ Installation
-
-1. **Clone the Repository**
-```bash
+# 1️⃣ Clone the Repository
 git clone https://github.com/lewiii254/GreenTechAI.git
+
+# 2️⃣ Navigate to Project Directory
 cd GreenTechAI
-```
 
-2. **Install Dependencies**
-```bash
+# 3️⃣ Install Dependencies
 npm install
-```
 
-3. **Environment Setup (Optional)**
-```bash
-# Copy environment template if you have API keys
-cp .env.example .env.local
-
-# Edit with your API keys (all features work without API keys using browser-native APIs)
-nano .env.local
-```
-
-4. **Start Development Server**
-```bash
+# 4️⃣ Start Development Server
 npm run dev
 ```
 
-5. **Open in Browser**
-```
-http://localhost:5173
+### 🎮 Running the Application
+
+<div align="center">
+
+```mermaid
+graph LR
+    A[💻 Developer] -->|npm install| B[📦 Install Dependencies]
+    B -->|npm run dev| C[🚀 Start Dev Server]
+    C -->|localhost:5173| D[🌐 Open Browser]
+    D -->|🎨 View App| E[✅ Ready to Use!]
+    
+    style A fill:#10B981,stroke:#059669,color:#fff
+    style B fill:#3B82F6,stroke:#2563EB,color:#fff
+    style C fill:#F59E0B,stroke:#D97706,color:#fff
+    style D fill:#8B5CF6,stroke:#7C3AED,color:#fff
+    style E fill:#059669,stroke:#047857,color:#fff
 ```
 
-### 🏗️ Build for Production
+</div>
+
+**Available Commands:**
 
 ```bash
-# Create production build
+# 🚀 Start development server (with hot reload)
+npm run dev
+
+# 🏗️ Build for production
 npm run build
 
-# Preview production build
+# 👀 Preview production build
 npm run preview
-```
 
-### 🧪 Code Quality
-
-```bash
-# Run ESLint
+# 🔍 Lint code
 npm run lint
 ```
+
+**🎉 That's it!** Open your browser to `http://localhost:5173` and start exploring!
+
+### 🛠️ Technology Stack
+
+<div align="center">
+
+```mermaid
+mindmap
+  root((🛠️ Tech<br/>Stack))
+    🎨 Frontend Core
+      ⚛️ React 18.3.1
+      📘 TypeScript 5.5.3
+      ⚡ Vite 5.4.2
+      🎨 Tailwind CSS 3.4.1
+    🧭 Routing & Navigation
+      🚦 React Router 7.9.5
+    🎭 UI & Animations
+      🎬 Framer Motion 12.23.13
+      🎨 Lucide Icons 0.344.0
+    📊 Data Visualization
+      📈 Recharts 3.2.1
+    🗺️ Maps & Location
+      🗺️ Leaflet 1.9.4
+      ⚛️ React Leaflet 4.2.1
+      📍 Marker Clustering 3.1.1
+    🔔 Notifications
+      🍞 React Hot Toast 2.6.0
+    🛠️ Utilities
+      📅 date-fns 4.1.0
+      🗄️ Supabase JS 2.57.4
+    🔧 Dev Tools
+      ✅ ESLint 9.9.1
+      📝 TypeScript ESLint
+      🎨 PostCSS & Autoprefixer
+```
+
+</div>
 
 ---
 
@@ -1343,51 +1623,145 @@ npm run preview
 
 ## 🚢 Deployment
 
+### 🌐 Deployment Architecture
+
+<div align="center">
+
+```mermaid
+graph TB
+    subgraph "👨‍💻 Development"
+        A[💻 Local Development]
+        B[🔧 Code Changes]
+        C[✅ Git Commit]
+    end
+    
+    subgraph "🔄 CI/CD Pipeline"
+        D[🌿 GitHub Actions]
+        E[🏗️ Build Process]
+        F[🧪 Run Tests]
+        G[✅ Quality Checks]
+    end
+    
+    subgraph "🚀 Deployment Targets"
+        H1[▲ Vercel]
+        H2[🟢 Netlify]
+        H3[📄 GitHub Pages]
+        H4[☁️ Cloudflare Pages]
+        H5[🅰️ AWS S3/CloudFront]
+        H6[🔷 Azure Static Apps]
+    end
+    
+    subgraph "🌍 Production"
+        I[🌐 Global CDN]
+        J[📊 Analytics]
+        K[👥 End Users]
+    end
+    
+    A --> B --> C
+    C --> D
+    D --> E --> F --> G
+    G -.->|Deploy| H1 & H2 & H3 & H4 & H5 & H6
+    H1 & H2 & H3 & H4 & H5 & H6 --> I
+    I --> J
+    I --> K
+    
+    style A fill:#10B981,stroke:#059669,color:#fff
+    style D fill:#3B82F6,stroke:#2563EB,color:#fff
+    style E fill:#3B82F6,stroke:#2563EB,color:#fff
+    style F fill:#3B82F6,stroke:#2563EB,color:#fff
+    style G fill:#3B82F6,stroke:#2563EB,color:#fff
+    style H1 fill:#F59E0B,stroke:#D97706,color:#fff
+    style H2 fill:#F59E0B,stroke:#D97706,color:#fff
+    style H3 fill:#F59E0B,stroke:#D97706,color:#fff
+    style H4 fill:#F59E0B,stroke:#D97706,color:#fff
+    style H5 fill:#F59E0B,stroke:#D97706,color:#fff
+    style H6 fill:#F59E0B,stroke:#D97706,color:#fff
+    style I fill:#8B5CF6,stroke:#7C3AED,color:#fff
+    style K fill:#059669,stroke:#047857,color:#fff
+```
+
+</div>
+
 ### 🚀 Production Build
 
 ```bash
-# Build optimized production bundle
+# 🏗️ Build optimized production bundle
 npm run build
 
-# Preview production build locally
+# 👀 Preview production build locally
 npm run preview
 
-# Build output will be in the dist/ folder
+# 📦 Build output will be in the dist/ folder
+ls -la dist/
 ```
 
-### 🌐 Deployment Options
+**Build Optimizations:**
+- ✅ Code splitting and tree shaking
+- ✅ Asset optimization and minification
+- ✅ Modern JavaScript targets
+- ✅ Efficient caching strategies
+- ✅ Lazy loading for better performance
 
-The application is a static React SPA that can be deployed to any static hosting service:
+### 📦 Deployment Options
 
-**Recommended Platforms**:
-- **Vercel**: Best for React apps, automatic deployments from GitHub
-- **Netlify**: Easy setup with continuous deployment
-- **GitHub Pages**: Free hosting for public repositories
-- **Cloudflare Pages**: Fast global CDN
-- **AWS S3 + CloudFront**: Scalable cloud hosting
-- **Azure Static Web Apps**: Microsoft cloud hosting
+<div align="center">
 
-### 📦 Vercel Deployment (Recommended)
+| Platform | ⚡ Speed | 💰 Cost | 🎯 Best For | 🔗 Deploy |
+|:---:|:---:|:---:|:---:|:---:|
+| **▲ Vercel** | ⚡⚡⚡ | Free Tier | React Apps | [Deploy](https://vercel.com) |
+| **🟢 Netlify** | ⚡⚡⚡ | Free Tier | Static Sites | [Deploy](https://netlify.com) |
+| **📄 GitHub Pages** | ⚡⚡ | Free | Public Repos | [Deploy](https://pages.github.com) |
+| **☁️ Cloudflare Pages** | ⚡⚡⚡ | Free Tier | Global CDN | [Deploy](https://pages.cloudflare.com) |
+| **🅰️ AWS S3** | ⚡⚡ | Pay-as-go | Enterprise | [Deploy](https://aws.amazon.com/s3/) |
+| **🔷 Azure Static** | ⚡⚡ | Free Tier | Azure Cloud | [Deploy](https://azure.microsoft.com) |
+
+</div>
+
+#### ▲ Vercel Deployment (Recommended)
+
+<div align="center">
+
+```mermaid
+sequenceDiagram
+    participant 👨‍💻 Developer
+    participant 🌿 GitHub
+    participant ▲ Vercel
+    participant 🌍 Production
+    
+    👨‍💻 Developer->>🌿 GitHub: 📤 Push Code
+    🌿 GitHub->>▲ Vercel: 🔔 Webhook Trigger
+    ▲ Vercel->>▲ Vercel: 🏗️ Build Application
+    ▲ Vercel->>▲ Vercel: ✅ Run Checks
+    ▲ Vercel->>🌍 Production: 🚀 Deploy to CDN
+    🌍 Production->>👨‍💻 Developer: 📧 Deployment URL
+```
+
+</div>
+
+**Quick Deploy to Vercel:**
 
 ```bash
-# Install Vercel CLI
+# 📦 Install Vercel CLI
 npm i -g vercel
 
-# Deploy
+# 🚀 Deploy to Vercel
 vercel
+
+# 🌐 Deploy to production
+vercel --prod
 ```
 
-Or connect your GitHub repository to Vercel for automatic deployments.
+**Or:** Simply connect your GitHub repository to Vercel for automatic deployments on every push!
 
-### 🐳 Docker Deployment (Optional)
+#### 🐳 Docker Deployment
 
 ```dockerfile
-# Dockerfile
+# 🐳 Multi-stage Dockerfile for optimized builds
 FROM node:18-alpine AS builder
 
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN npm ci --only=production
 COPY . .
 RUN npm run build
 
@@ -1399,128 +1773,325 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 
 ```bash
-# Build Docker image
-docker build -t greenai .
+# 🏗️ Build Docker image
+docker build -t greenai:latest .
 
-# Run container
-docker run -p 80:80 greenai
+# 🚀 Run container
+docker run -d -p 80:80 --name greenai greenai:latest
+
+# 🔍 Check status
+docker ps | grep greenai
 ```
-
-### ⚙️ Build Configuration
-
-The application uses Vite for optimal production builds:
-- Code splitting and tree shaking
-- Asset optimization
-- Minification
-- Modern browser targets
-
-Build output is optimized for:
-- Fast loading times
-- Small bundle sizes
-- Modern JavaScript features
-- Efficient caching
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions to GreenAI! Here's how you can help:
+We welcome contributions from the community! 🎉 Whether you're fixing bugs, adding features, or improving documentation, your help is appreciated.
 
-### 📋 Development Guidelines
+### 🔄 Contribution Flow
 
-1. **Code Style**
-   - Use TypeScript for type safety
-   - Follow ESLint configuration
-   - Use Tailwind CSS for styling
-   - Write meaningful commit messages
-   - Keep components under 200 lines when possible
+<div align="center">
 
-2. **Component Structure**
-   - Use functional components with hooks
-   - Implement proper TypeScript interfaces
-   - Use Framer Motion for animations
-   - Ensure responsive design (mobile-first)
+```mermaid
+gitGraph
+    commit id: "main branch"
+    branch feature/amazing-feature
+    checkout feature/amazing-feature
+    commit id: "Add feature"
+    commit id: "Add tests"
+    commit id: "Update docs"
+    checkout main
+    merge feature/amazing-feature tag: "PR merged! 🎉"
+    commit id: "Deploy to production"
+```
 
-3. **Naming Conventions**
-   - Components: PascalCase (e.g., `QuerySection.tsx`)
-   - Services: camelCase (e.g., `mlService.ts`)
-   - CSS classes: Tailwind utilities
+</div>
+
+### 📝 Development Guidelines
+
+<div align="center">
+
+```mermaid
+flowchart TD
+    A[🍴 Fork Repository] --> B[🌿 Create Feature Branch]
+    B --> C[💻 Make Changes]
+    C --> D[✅ Write/Update Tests]
+    D --> E[🔍 Run Linter]
+    E --> F{✅ Lint Passed?}
+    F -->|No| C
+    F -->|Yes| G[🏗️ Build Project]
+    G --> H{✅ Build Success?}
+    H -->|No| C
+    H -->|Yes| I[📝 Write Clear Commit]
+    I --> J[📤 Push Changes]
+    J --> K[🔀 Create Pull Request]
+    K --> L[👀 Code Review]
+    L --> M{✅ Approved?}
+    M -->|No| C
+    M -->|Yes| N[🎉 Merge to Main]
+    
+    style A fill:#10B981,stroke:#059669,color:#fff
+    style N fill:#059669,stroke:#047857,color:#fff
+    style F fill:#F59E0B,stroke:#D97706,color:#fff
+    style H fill:#F59E0B,stroke:#D97706,color:#fff
+    style M fill:#F59E0B,stroke:#D97706,color:#fff
+```
+
+</div>
+
+### 📋 Code Standards
+
+**1️⃣ Code Style**
+- ✅ Use TypeScript for type safety
+- ✅ Follow ESLint configuration
+- ✅ Use Tailwind CSS for styling
+- ✅ Write meaningful commit messages
+- ✅ Keep components under 200 lines when possible
+
+**2️⃣ Component Structure**
+- ✅ Use functional components with hooks
+- ✅ Implement proper TypeScript interfaces
+- ✅ Use Framer Motion for animations
+- ✅ Ensure responsive design (mobile-first)
+
+**3️⃣ Naming Conventions**
+- 📄 **Components**: PascalCase (e.g., `QuerySection.tsx`)
+- 🔧 **Services**: camelCase (e.g., `mlService.ts`)
+- 🎨 **CSS Classes**: Tailwind utilities
+- 📁 **Files**: Match component names
 
 ### 🔄 Pull Request Process
 
-1. Fork the repository
-2. Create feature branch: `git checkout -b feature/amazing-feature`
-3. Make your changes and test thoroughly
-4. Run linting: `npm run lint`
-5. Build to verify: `npm run build`
-6. Commit changes: `git commit -m 'Add amazing feature'`
-7. Push to branch: `git push origin feature/amazing-feature`
-8. Open Pull Request with clear description
+```bash
+# 1️⃣ Fork and clone the repository
+git clone https://github.com/YOUR_USERNAME/GreenTechAI.git
+cd GreenTechAI
+
+# 2️⃣ Create a feature branch
+git checkout -b feature/amazing-feature
+
+# 3️⃣ Make your changes and commit
+git add .
+git commit -m "✨ Add amazing feature"
+
+# 4️⃣ Run quality checks
+npm run lint
+npm run build
+
+# 5️⃣ Push to your fork
+git push origin feature/amazing-feature
+
+# 6️⃣ Open a Pull Request on GitHub
+# Include a clear description of your changes!
+```
 
 ### 🐛 Reporting Issues
 
-- Use GitHub Issues
-- Include browser/OS information
-- Provide steps to reproduce
-- Add screenshots if applicable
+Found a bug? Please help us improve!
+
+**When reporting issues, include:**
+- 🖥️ Browser and OS information
+- 📝 Steps to reproduce the issue
+- 📸 Screenshots if applicable
+- 💡 Expected vs actual behavior
+
+**Create an issue:** [GitHub Issues](https://github.com/lewiii254/GreenTechAI/issues)
 
 ### 💡 Feature Requests
 
-We're always looking to improve! Suggest features through GitHub Issues with the "enhancement" label.
+Have an idea to make GreenAI better?
+
+**We'd love to hear it!**
+- 🌟 Describe the feature and its benefits
+- 🎯 Explain the use case
+- 💭 Share any implementation ideas
+
+**Request a feature:** [GitHub Issues](https://github.com/lewiii254/GreenTechAI/issues) with the "enhancement" label
+
+### 🏆 Contributors
+
+<div align="center">
+
+**Thank you to all our amazing contributors!** 🙏
+
+[![Contributors](https://contrib.rocks/image?repo=lewiii254/GreenTechAI)](https://github.com/lewiii254/GreenTechAI/graphs/contributors)
+
+</div>
 
 ---
 
 ## 🌟 Key Highlights
 
+<div align="center">
+
 ### ✨ What Makes GreenAI Special
 
-- **🚀 Ready to Use**: No backend setup required - works immediately
-- **🎨 Modern UI**: Beautiful design with dark mode support
-- **📱 Fully Responsive**: Perfect on mobile, tablet, and desktop
-- **🔊 Voice Enabled**: Natural voice input and output
-- **🗺️ Interactive Maps**: Real-time visualization with Leaflet
-- **📊 Data Visualization**: Rich charts and analytics
-- **🏆 Gamification**: Engaging user experience with rewards
-- **🌓 Dark Mode**: Full dark mode support
-- **⚡ Fast**: Optimized with Vite and lazy loading
-- **🔌 Integration Ready**: Clean architecture for backend connection
+```mermaid
+mindmap
+  root((🌱 GreenAI<br/>Features))
+    🚀 Quick Start
+      No backend needed
+      Works immediately
+      Zero configuration
+    🎨 Modern Design
+      Beautiful UI/UX
+      Dark mode support
+      Smooth animations
+    📱 Responsive
+      Mobile optimized
+      Tablet friendly
+      Desktop enhanced
+    🔊 Voice Enabled
+      Natural input
+      Speech output
+      Hands-free interaction
+    🗺️ Interactive
+      Real-time maps
+      Data visualization
+      Rich analytics
+    🏆 Engaging
+      Gamification
+      Achievements
+      Community features
+    ⚡ Performance
+      Fast loading
+      Optimized builds
+      Lazy loading
+    🔌 Integration Ready
+      Clean architecture
+      Service layers
+      API ready
+```
+
+</div>
 
 ### 🎯 Use Cases
 
-- **Educational Tool**: Learn about waste-to-energy conversion
-- **Community Platform**: Engage communities in sustainability
-- **Prototype/Demo**: Showcase AI-powered waste management
-- **Development Base**: Foundation for full-stack application
-- **UI/UX Reference**: Modern React/TypeScript patterns
+<div align="center">
+
+| 🎓 **Educational** | 🏘️ **Community** | 🎨 **Development** | 🚀 **Enterprise** |
+|:---:|:---:|:---:|:---:|
+| Learn about waste-to-energy | Engage communities | React/TS patterns | Prototype solutions |
+| Interactive modules | Sustainability goals | Modern architecture | Scalable foundation |
+| Progress tracking | Social features | Best practices | API integration |
+
+</div>
+
+**Perfect For:**
+- 🎓 **Educational Tool**: Learn about waste-to-energy conversion with interactive modules
+- 🏘️ **Community Platform**: Engage communities in sustainability initiatives
+- 🎨 **Prototype/Demo**: Showcase AI-powered waste management solutions
+- 🚀 **Development Base**: Foundation for full-stack applications
+- 📚 **UI/UX Reference**: Modern React/TypeScript design patterns
 
 ---
 
-## 📞 Support & Contact
+## 📞 Support & Resources
 
-- **Repository**: [github.com/lewiii254/GreenTechAI](https://github.com/lewiii254/GreenTechAI)
-- **Issues**: [GitHub Issues](https://github.com/lewiii254/GreenTechAI/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/lewiii254/GreenTechAI/discussions)
+<div align="center">
+
+### 🤝 Get Help & Connect
+
+| Resource | Description | Link |
+|:---:|:---|:---:|
+| 📖 **Documentation** | Complete project documentation | [README](README.md) |
+| 🐛 **Issues** | Report bugs or request features | [GitHub Issues](https://github.com/lewiii254/GreenTechAI/issues) |
+| 💬 **Discussions** | Ask questions and share ideas | [GitHub Discussions](https://github.com/lewiii254/GreenTechAI/discussions) |
+| ⭐ **Star** | Show your support | [Star this repo](https://github.com/lewiii254/GreenTechAI) |
+| 🍴 **Fork** | Create your own version | [Fork on GitHub](https://github.com/lewiii254/GreenTechAI/fork) |
+
+</div>
+
+### 📬 Contact & Community
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-lewiii254-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lewiii254)
+[![Repository](https://img.shields.io/badge/Repository-GreenTechAI-10B981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lewiii254/GreenTechAI)
+
+**Have questions?** Open an issue or start a discussion!
+
+</div>
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the MIT License.
+<div align="center">
+
+This project is open source and available under the **MIT License**.
+
+```
+MIT License
+
+Copyright (c) 2024 GreenTechAI Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
+
+[📄 Full License Text](LICENSE)
+
+</div>
+
+---
+
+## 🙏 Acknowledgments
+
+<div align="center">
+
+**Built with amazing open-source technologies:**
+
+[![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Leaflet](https://img.shields.io/badge/Leaflet-199900?style=flat&logo=leaflet&logoColor=white)](https://leafletjs.com/)
+
+**Special thanks to all contributors and the open-source community!** 💚
+
+</div>
 
 ---
 
 <div align="center">
 
-**Built with ❤️ for a sustainable future**
+## 🌱 **Built with ❤️ for a sustainable future** 🌍
 
-### 🌱 Turning Waste Into Energy With AI 🌱
+### 🚀 Turning Waste Into Energy With AI 🔋
 
-[⭐ Star this repo](https://github.com/lewiii254/GreenTechAI) | [🐛 Report Bug](https://github.com/lewiii254/GreenTechAI/issues) | [💡 Request Feature](https://github.com/lewiii254/GreenTechAI/issues)
+<br/>
+
+[⭐ **Star this repo**](https://github.com/lewiii254/GreenTechAI) · [🐛 **Report Bug**](https://github.com/lewiii254/GreenTechAI/issues) · [💡 **Request Feature**](https://github.com/lewiii254/GreenTechAI/issues) · [🤝 **Contribute**](CONTRIBUTING.md)
+
+<br/>
 
 **Tech Stack**: React • TypeScript • Tailwind CSS • Leaflet • Recharts • Framer Motion
 
+<br/>
+
+[![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)](https://github.com/lewiii254/GreenTechAI)
+[![Powered by AI](https://img.shields.io/badge/Powered%20by-🤖%20AI-blue?style=for-the-badge)](https://github.com/lewiii254/GreenTechAI)
+[![Eco Friendly](https://img.shields.io/badge/Eco-🌱%20Friendly-green?style=for-the-badge)](https://github.com/lewiii254/GreenTechAI)
+
 ---
 
-*Making the planet greener, one byte at a time* 🌍
+### 🌍 *Making the planet greener, one byte at a time* 💚
+
+**Join us in the journey towards a sustainable future!**
+
+<br/>
+
+![Green Future](https://img.shields.io/badge/🌱-Green%20Future-success?style=for-the-badge)
+![Carbon Neutral](https://img.shields.io/badge/♻️-Zero%20Waste%20Goal-blue?style=for-the-badge)
+![Community Driven](https://img.shields.io/badge/👥-Community%20Driven-purple?style=for-the-badge)
 
 </div>
