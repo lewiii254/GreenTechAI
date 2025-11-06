@@ -69,77 +69,77 @@ const RecenterMap: React.FC<{ center: [number, number] }> = ({ center }) => {
   return null;
 };
 
+// Mock data for waste collection points - expanded with more locations
+const allWastePoints: WastePoint[] = [
+  {
+    id: '1',
+    name: 'EcoCycle Collection Hub',
+    address: '123 Green Street, Eco City',
+    lat: 40.7128,
+    lng: -74.0060,
+    type: 'collection',
+    capacity: 85,
+    efficiency: 92,
+  },
+  {
+    id: '2',
+    name: 'Renewable Energy Plant',
+    address: '456 Sustainability Ave, Green Valley',
+    lat: 40.7580,
+    lng: -73.9855,
+    type: 'energy-plant',
+    capacity: 70,
+    efficiency: 88,
+  },
+  {
+    id: '3',
+    name: 'Waste Processing Center',
+    address: '789 Circular Economy Blvd, Eco District',
+    lat: 40.6892,
+    lng: -74.0445,
+    type: 'processing',
+    capacity: 95,
+    efficiency: 85,
+  },
+  {
+    id: '4',
+    name: 'Green Valley Collection Point',
+    address: '234 Eco Lane, Green Valley',
+    lat: 40.7489,
+    lng: -73.9680,
+    type: 'collection',
+    capacity: 78,
+    efficiency: 90,
+  },
+  {
+    id: '5',
+    name: 'Solar Energy Converter',
+    address: '567 Renewable Road, Eco City',
+    lat: 40.7306,
+    lng: -73.9352,
+    type: 'energy-plant',
+    capacity: 82,
+    efficiency: 94,
+  },
+  {
+    id: '6',
+    name: 'Central Recycling Facility',
+    address: '890 Sustainability Street, Green District',
+    lat: 40.6782,
+    lng: -73.9442,
+    type: 'processing',
+    capacity: 88,
+    efficiency: 87,
+  },
+];
+
 const MapSection: React.FC = () => {
   const [selectedPoint, setSelectedPoint] = useState<WastePoint | null>(null);
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number }>({ lat: 40.7128, lng: -74.0060 });
   const [mapLayer, setMapLayer] = useState<'street' | 'satellite'>('street');
   const [filterType, setFilterType] = useState<string>('all');
   const [isLoadingLocation, setIsLoadingLocation] = useState(false);
-  const [showUserRadius, setShowUserRadius] = useState(true);
-
-  // Mock data for waste collection points - expanded with more locations
-  const allWastePoints: WastePoint[] = [
-    {
-      id: '1',
-      name: 'EcoCycle Collection Hub',
-      address: '123 Green Street, Eco City',
-      lat: 40.7128,
-      lng: -74.0060,
-      type: 'collection',
-      capacity: 85,
-      efficiency: 92,
-    },
-    {
-      id: '2',
-      name: 'Renewable Energy Plant',
-      address: '456 Sustainability Ave, Green Valley',
-      lat: 40.7580,
-      lng: -73.9855,
-      type: 'energy-plant',
-      capacity: 70,
-      efficiency: 88,
-    },
-    {
-      id: '3',
-      name: 'Waste Processing Center',
-      address: '789 Circular Economy Blvd, Eco District',
-      lat: 40.6892,
-      lng: -74.0445,
-      type: 'processing',
-      capacity: 95,
-      efficiency: 85,
-    },
-    {
-      id: '4',
-      name: 'Green Valley Collection Point',
-      address: '234 Eco Lane, Green Valley',
-      lat: 40.7489,
-      lng: -73.9680,
-      type: 'collection',
-      capacity: 78,
-      efficiency: 90,
-    },
-    {
-      id: '5',
-      name: 'Solar Energy Converter',
-      address: '567 Renewable Road, Eco City',
-      lat: 40.7306,
-      lng: -73.9352,
-      type: 'energy-plant',
-      capacity: 82,
-      efficiency: 94,
-    },
-    {
-      id: '6',
-      name: 'Central Recycling Facility',
-      address: '890 Sustainability Street, Green District',
-      lat: 40.6782,
-      lng: -73.9442,
-      type: 'processing',
-      capacity: 88,
-      efficiency: 87,
-    },
-  ];
+  const [showUserRadius] = useState(true);
 
   // Calculate distance between two points using Haversine formula
   const calculateDistance = (lat1: number, lon1: number, lat2: number, lon2: number): number => {
