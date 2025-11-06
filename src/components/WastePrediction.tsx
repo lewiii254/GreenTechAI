@@ -22,11 +22,6 @@ const WastePrediction: React.FC = () => {
   const [insights, setInsights] = useState<InsightItem[]>([]);
   const accuracy = 92;
 
-  useEffect(() => {
-    // Simulate AI predictions based on historical data
-    generatePredictions(timeframe);
-  }, [timeframe, generatePredictions]);
-
   const generateInsights = React.useCallback((data: PredictionData[]) => {
     const insights: InsightItem[] = [];
     
@@ -92,6 +87,11 @@ const WastePrediction: React.FC = () => {
     setPredictions(baseData);
     generateInsights(baseData);
   }, [generateInsights]);
+
+  useEffect(() => {
+    // Simulate AI predictions based on historical data
+    generatePredictions(timeframe);
+  }, [timeframe, generatePredictions]);
 
   const getInsightIcon = (type: string) => {
     switch (type) {
