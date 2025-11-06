@@ -27,35 +27,7 @@ const WastePrediction: React.FC = () => {
     generatePredictions(timeframe);
   }, [timeframe, generatePredictions]);
 
-  const generatePredictions = React.useCallback((period: string) => {
-    // Mock historical data with predictions
-    const baseData: PredictionData[] = [];
-    const days = period === 'week' ? 7 : period === 'month' ? 30 : 90;
-    const now = new Date();
-
-    for (let i = 0; i < days; i++) {
-      const date = new Date(now);
-      date.setDate(date.getDate() + i);
-      
-      // Simulate actual and predicted values with some variance
-      const baseValue = 15 + Math.sin(i / 7) * 5; // Weekly pattern
-      const weekendBoost = date.getDay() === 0 || date.getDay() === 6 ? 3 : 0;
-      const actual = i < days - 3 ? baseValue + weekendBoost + (Math.random() - 0.5) * 2 : 0;
-      const predicted = baseValue + weekendBoost + (Math.random() - 0.5) * 1.5;
-      
-      baseData.push({
-        date: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-        actual: parseFloat(actual.toFixed(1)),
-        predicted: parseFloat(predicted.toFixed(1)),
-        confidence: 85 + Math.random() * 10,
-      });
-    }
-
-    setPredictions(baseData);
-    generateInsights(baseData);
-  }, []);
-
-  const generateInsights = (data: PredictionData[]) => {
+  const generateInsights = React.useCallback((data: PredictionData[]) => {
     const insights: InsightItem[] = [];
     
     // Analyze trends
@@ -91,7 +63,35 @@ const WastePrediction: React.FC = () => {
     }
 
     setInsights(insights);
-  };
+  }, []);
+
+  const generatePredictions = React.useCallback((period: string) => {
+    // Mock historical data with predictions
+    const baseData: PredictionData[] = [];
+    const days = period === 'week' ? 7 : period === 'month' ? 30 : 90;
+    const now = new Date();
+
+    for (let i = 0; i < days; i++) {
+      const date = new Date(now);
+      date.setDate(date.getDate() + i);
+      
+      // Simulate actual and predicted values with some variance
+      const baseValue = 15 + Math.sin(i / 7) * 5; // Weekly pattern
+      const weekendBoost = date.getDay() === 0 || date.getDay() === 6 ? 3 : 0;
+      const actual = i < days - 3 ? baseValue + weekendBoost + (Math.random() - 0.5) * 2 : 0;
+      const predicted = baseValue + weekendBoost + (Math.random() - 0.5) * 1.5;
+      
+      baseData.push({
+        date: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+        actual: parseFloat(actual.toFixed(1)),
+        predicted: parseFloat(predicted.toFixed(1)),
+        confidence: 85 + Math.random() * 10,
+      });
+    }
+
+    setPredictions(baseData);
+    generateInsights(baseData);
+  }, [generateInsights]);
 
   const getInsightIcon = (type: string) => {
     switch (type) {

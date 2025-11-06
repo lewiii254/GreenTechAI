@@ -209,7 +209,7 @@ const ExportReports: React.FC = () => {
             </label>
             <select
               value={config.dateRange}
-              onChange={(e) => setConfig({ ...config, dateRange: e.target.value as any })}
+              onChange={(e) => setConfig({ ...config, dateRange: e.target.value as 'week' | 'month' | 'quarter' | 'year' })}
               className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
             >
               <option value="week">Last Week</option>
