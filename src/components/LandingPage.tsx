@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Zap, Leaf, Brain, ArrowRight } from 'lucide-react';
 
 const LandingPage: React.FC = () => {
+  const navigate = useNavigate();
+  
   const features = [
     {
       icon: Brain,
@@ -22,7 +25,7 @@ const LandingPage: React.FC = () => {
   ];
 
   const scrollToQuery = () => {
-    document.getElementById('query')?.scrollIntoView({ behavior: 'smooth' });
+    navigate('/features');
   };
 
   return (
@@ -56,7 +59,7 @@ const LandingPage: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center space-x-2 group"
           >
-            <span>Call Waste-Energy AI</span>
+            <span>Explore Features</span>
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
           </motion.button>
         </div>
