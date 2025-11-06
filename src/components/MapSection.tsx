@@ -4,7 +4,7 @@ import { MapPin, Navigation, Truck, Zap, Clock, Locate, Layers, Filter } from 'l
 import { MapContainer, TileLayer, Marker, Popup, Circle, useMap } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster';
 import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
+import toast from 'react-hot-toast';
 
 interface WastePoint {
   id: string;
@@ -161,19 +161,14 @@ const MapSection: React.FC = () => {
       distance: calculateDistance(userLocation.lat, userLocation.lng, point.lat, point.lng),
     }));
 
-    // Find the nearest point
-    let nearestDistance = Infinity;
-    let nearestId = '';
-    pointsWithDistance.forEach(point => {
-      if (point.distance < nearestDistance) {
-        nearestDistance = point.distance;
-        nearestId = point.id;
-      }
-    });
+    // Find the nearest point using reduce
+    const nearest = pointsWithDistance.reduce((closest, point) => 
+      point.distance < closest.distance ? point : closest
+    );
 
     return pointsWithDistance.map(point => ({
       ...point,
-      isNearest: point.id === nearestId,
+      isNearest: point.id === nearest.id,
     }));
   }, [userLocation]);
 
@@ -194,16 +189,17 @@ const MapSection: React.FC = () => {
             lng: position.coords.longitude,
           });
           setIsLoadingLocation(false);
+          toast.success('Location updated successfully!');
         },
         (error) => {
           console.error('Error getting location:', error);
           setIsLoadingLocation(false);
-          // Keep default location if geolocation fails
+          toast.error('Unable to get your location. Please check your browser permissions.');
         }
       );
     } else {
       setIsLoadingLocation(false);
-      alert('Geolocation is not supported by your browser');
+      toast.error('Geolocation is not supported by your browser');
     }
   };
 
