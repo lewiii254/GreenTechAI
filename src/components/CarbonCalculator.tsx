@@ -112,7 +112,7 @@ const CarbonCalculator: React.FC = () => {
                 </label>
                 <select
                   value={input.wasteType}
-                  onChange={(e) => setInput({ ...input, wasteType: e.target.value as any })}
+                  onChange={(e) => setInput({ ...input, wasteType: e.target.value as 'organic' | 'plastic' | 'paper' | 'mixed' })}
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
                 >
                   <option value="organic">Organic (Food, Garden waste)</option>

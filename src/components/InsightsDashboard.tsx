@@ -15,6 +15,7 @@ import {
   Bar,
 } from 'recharts';
 import { TrendingUp, Zap, Leaf, Recycle, Calendar } from 'lucide-react';
+import SocialSharing from './SocialSharing';
 
 const InsightsDashboard: React.FC = () => {
   const [timeRange, setTimeRange] = useState('week');
@@ -261,6 +262,18 @@ const InsightsDashboard: React.FC = () => {
             </BarChart>
           </ResponsiveContainer>
         </motion.div>
+      </div>
+
+      {/* Social Sharing Section */}
+      <div className="flex justify-center mt-12">
+        <SocialSharing
+          data={{
+            carbonSaved: 2.4,
+            energyGenerated: 295,
+            wasteProcessed: 126,
+            treesEquivalent: 12,
+          }}
+        />
       </div>
     </section>
   );

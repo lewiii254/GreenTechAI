@@ -10,6 +10,8 @@ import CommunitySection from './components/CommunitySection';
 import WeatherImpact from './components/WeatherImpact';
 import CarbonCalculator from './components/CarbonCalculator';
 import EducationalHub from './components/EducationalHub';
+import WastePrediction from './components/WastePrediction';
+import CommunityChallenges from './components/CommunityChallenges';
 import ExportReports from './components/ExportReports';
 
 function App() {
@@ -29,7 +31,9 @@ function App() {
           <MapSection />
           <WeatherImpact />
           <InsightsDashboard />
+          <WastePrediction />
           <CarbonCalculator />
+          <CommunityChallenges />
           <EducationalHub />
           <ExportReports />
           <CommunitySection />
@@ -66,6 +70,8 @@ function App() {
                   <li>Community Network</li>
                   <li>Weather Impact</li>
                   <li>Carbon Calculator</li>
+                  <li>AI Predictions</li>
+                  <li>Challenges & Rewards</li>
                 </ul>
               </div>
               

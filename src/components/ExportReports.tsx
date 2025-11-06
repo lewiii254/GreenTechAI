@@ -63,7 +63,7 @@ const ExportReports: React.FC = () => {
     toast.success(`${config.format.toUpperCase()} report generated successfully!`);
   };
 
-  const getMockReportData = () => {
+  const getMockReportData = (): Record<string, unknown> => {
     return {
       summary: {
         totalWaste: 126,
@@ -80,13 +80,13 @@ const ExportReports: React.FC = () => {
     };
   };
 
-  const downloadCSV = (data: any) => {
+  const downloadCSV = (data: Record<string, unknown>) => {
     const csvContent = convertToCSV(data.data);
     const blob = new Blob([csvContent], { type: 'text/csv' });
     downloadFile(blob, `greenai-report-${Date.now()}.csv`);
   };
 
-  const downloadJSON = (data: any) => {
+  const downloadJSON = (data: Record<string, unknown>) => {
     const jsonContent = JSON.stringify(data, null, 2);
     const blob = new Blob([jsonContent], { type: 'application/json' });
     downloadFile(blob, `greenai-report-${Date.now()}.json`);
@@ -103,14 +103,17 @@ const ExportReports: React.FC = () => {
     URL.revokeObjectURL(url);
   };
 
-  const convertToCSV = (data: any) => {
+  const convertToCSV = (data: Record<string, unknown>) => {
+    const summary = data.summary as { totalWaste: number; energyGenerated: number; carbonSaved: number; efficiency: number };
+    const trends = data.trends as Array<{ date: string; waste: number; energy: number }>;
+    
     let csv = 'Metric,Value\n';
-    csv += `Total Waste,${data.summary.totalWaste} tons\n`;
-    csv += `Energy Generated,${data.summary.energyGenerated} kWh\n`;
-    csv += `Carbon Saved,${data.summary.carbonSaved} tons\n`;
-    csv += `Efficiency,${data.summary.efficiency}%\n`;
+    csv += `Total Waste,${summary.totalWaste} tons\n`;
+    csv += `Energy Generated,${summary.energyGenerated} kWh\n`;
+    csv += `Carbon Saved,${summary.carbonSaved} tons\n`;
+    csv += `Efficiency,${summary.efficiency}%\n`;
     csv += '\nDate,Waste (tons),Energy (kWh)\n';
-    data.trends.forEach((row: any) => {
+    trends.forEach((row) => {
       csv += `${row.date},${row.waste},${row.energy}\n`;
     });
     return csv;
