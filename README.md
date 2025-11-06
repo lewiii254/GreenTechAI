@@ -11,7 +11,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-5.4.2-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 [![React Router](https://img.shields.io/badge/React_Router-7.9.5-CA4245?style=for-the-badge&logo=react-router)](https://reactrouter.com/)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23-0055FF?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23.13-0055FF?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
 [![Leaflet](https://img.shields.io/badge/Leaflet-1.9.4-199900?style=for-the-badge&logo=leaflet)](https://leafletjs.com/)
 [![Recharts](https://img.shields.io/badge/Recharts-3.2.1-22B5BF?style=for-the-badge)](https://recharts.org/)
 
@@ -1016,9 +1016,9 @@ GreenTechAI/
 │   │   ├── ToolsPage.tsx       # Analytics tools
 │   │   └── CommunityPage.tsx   # Community hub
 │   ├── 📁 services/            # Business Logic
-│   │   ├── 🤖 mlService.ts              # ML integration (ready)
 │   │   ├── 🔔 notificationService.ts    # Notifications
-│   │   └── 🏆 gamificationService.ts    # Gamification logic
+│   │   ├── 🏆 gamificationService.ts    # Gamification logic
+│   │   └── 🤖 (mlService.ts - planned)  # ML integration ready
 │   ├── 📁 contexts/            # React Contexts
 │   │   └── ThemeContext.tsx    # Dark mode state
 │   ├── 🎨 App.tsx              # Main App Component
@@ -1057,20 +1057,37 @@ The codebase includes service layers and clearly marked integration points for w
 
 #### **ML Model Integration Points**
 
-**Location**: `src/services/mlService.ts`
+**Planned Location**: `src/services/mlService.ts` (to be created)
 
-The ML service is structured but currently returns mock data. Integration points for:
+When you're ready to add ML capabilities, create this service layer with integration points for:
 - Waste analysis and classification
 - Energy output predictions  
 - Collection route optimization
 - Waste trend forecasting
 
-**To Integrate**:
+**Implementation Template**:
 ```typescript
-// Current: Mock responses
-// Future: Replace with actual ML API calls
+// src/services/mlService.ts (create this file when ready)
 const ML_API_BASE_URL = process.env.VITE_ML_API_URL || 'http://localhost:5000/api';
+
+class MLService {
+  async analyzeWaste(data: WasteData): Promise<WasteAnalysis> {
+    // Connect to your Python ML backend
+    const response = await fetch(`${ML_API_BASE_URL}/analyze-waste`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    return response.json();
+  }
+  
+  // Add more ML methods as needed
+}
+
+export const mlService = new MLService();
 ```
+
+**Current Implementation**: Components currently use mock data for AI predictions. Replace with `mlService` calls when backend is ready.
 
 #### **Notification Service**
 
@@ -1130,26 +1147,30 @@ When you're ready to add a backend:
 
 ### 🤖 ML Model Integration Points
 
-#### 1. **Query Processing** (`src/components/QuerySection.tsx`)
+#### 1. **Query Processing** (In Components)
 ```typescript
-// 🔗 INTEGRATION POINT: Line 89-95
+// 🔗 INTEGRATION POINT: src/components/QuerySection.tsx
+// Currently uses mock AI responses
 const handleSubmit = async (e: React.FormEvent) => {
-  // Replace simulateAIResponse with actual ML service call
-  const aiResponse = await mlService.getOptimizationRecommendations(inputText);
+  // TODO: When mlService is created, replace simulateAIResponse with:
+  // const aiResponse = await mlService.getOptimizationRecommendations(inputText);
+  const aiResponse = simulateAIResponse(inputText);
   // Process and display response
 };
 ```
 
-#### 2. **Waste Analysis** (`src/components/InsightsDashboard.tsx`)
+#### 2. **Waste Analysis** (In Components)
 ```typescript
-// 🔗 INTEGRATION POINT: Line 45-60
+// 🔗 INTEGRATION POINT: src/components/InsightsDashboard.tsx
+// Currently uses mock data
 useEffect(() => {
   const fetchAnalytics = async () => {
     try {
-      // Replace mock data with ML predictions
-      const trends = await mlService.getWasteTrends(timeRange);
-      const predictions = await mlService.getEnergyPredictions();
-      setAnalyticsData({ trends, predictions });
+      // TODO: Replace mock data with ML service when available
+      // const trends = await mlService.getWasteTrends(timeRange);
+      // const predictions = await mlService.getEnergyPredictions();
+      const trends = generateMockTrends();
+      setAnalyticsData({ trends });
     } catch (error) {
       console.error('Analytics fetch error:', error);
     }
@@ -1158,16 +1179,18 @@ useEffect(() => {
 }, [timeRange]);
 ```
 
-#### 3. **Collection Optimization** (`src/components/MapSection.tsx`)
+#### 3. **Collection Optimization** (In Components)
 ```typescript
-// 🔗 INTEGRATION POINT: Line 78-85
+// 🔗 INTEGRATION POINT: src/components/MapSection.tsx
+// Currently uses mock optimization
 const optimizeRoutes = async (userLocation: Location) => {
   try {
-    // Replace mock data with ML optimization
-    const optimization = await mlService.optimizeCollection({
-      userLocation,
-      collectionPoints: wastePoints
-    });
+    // TODO: Replace with ML service when available
+    // const optimization = await mlService.optimizeCollection({
+    //   userLocation,
+    //   collectionPoints: wastePoints
+    // });
+    const optimization = generateMockRoutes(userLocation, wastePoints);
     setOptimizedRoutes(optimization.routes);
   } catch (error) {
     console.error('Route optimization error:', error);
@@ -1175,21 +1198,26 @@ const optimizeRoutes = async (userLocation: Location) => {
 };
 ```
 
-### 🌐 Backend API Integration Points
+### 🌐 Backend API Integration Points (Planned)
 
-#### 1. **Collection Points** (`src/services/apiService.ts`)
+#### 1. **Collection Points** (To be created: `src/services/apiService.ts`)
 ```typescript
-// 🔗 INTEGRATION POINT: Replace with your database
-async getCollectionPoints(lat?: number, lng?: number): Promise<CollectionPoint[]> {
-  // Connect to your PostgreSQL/MongoDB database
-  // Query collection points based on location
-  return this.makeRequest<CollectionPoint[]>('/collection-points');
+// 🔗 INTEGRATION POINT: Create this service when backend is ready
+// src/services/apiService.ts
+class ApiService {
+  async getCollectionPoints(lat?: number, lng?: number): Promise<CollectionPoint[]> {
+    // Connect to your PostgreSQL/MongoDB database
+    // Query collection points based on location
+    const response = await fetch(`${API_URL}/collection-points?lat=${lat}&lng=${lng}`);
+    return response.json();
+  }
 }
 ```
 
-#### 2. **Real-time Updates** (`src/hooks/useWebSocket.ts`)
+#### 2. **Real-time Updates** (To be created: `src/hooks/useWebSocket.ts`)
 ```typescript
-// 🔗 INTEGRATION POINT: WebSocket connection for live data
+// 🔗 INTEGRATION POINT: Create this hook when WebSocket server is ready
+// src/hooks/useWebSocket.ts
 export const useWebSocket = (url: string) => {
   useEffect(() => {
     // Connect to your WebSocket server for real-time updates
@@ -1198,9 +1226,12 @@ export const useWebSocket = (url: string) => {
       const data = JSON.parse(event.data);
       // Handle real-time waste collection updates
     };
+    return () => ws.close();
   }, [url]);
 };
 ```
+
+**Note**: Currently, all data is mock data served from components. Create these service files when your backend is ready.
 
 ### 🗺️ External Service Integration Points
 
