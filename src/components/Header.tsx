@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Recycle, Menu, X } from 'lucide-react';
 import NotificationSystem from './NotificationSystem';
+import DarkModeToggle from './DarkModeToggle';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,8 +49,9 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
-          {/* Notifications */}
-          <div className="hidden md:block">
+          {/* Notifications and Dark Mode */}
+          <div className="hidden md:flex items-center space-x-4">
+            <DarkModeToggle />
             <NotificationSystem />
           </div>
 
